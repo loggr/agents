@@ -8,7 +8,6 @@ Loggr agent to post events. Includes a fluent interface to posting events.
 * Add a section to your web.config or app.config
 
 Sample lines for you *.config file
-{{
 	<configuration>
 	  <configSections>
 		<sectionGroup name="loggr">
@@ -30,7 +29,6 @@ Sample lines for you *.config file
 	  ...
 	  
 	</configuration>
-}}
 
 ## How To Use
 
@@ -50,6 +48,8 @@ Post a simple event
 		.Text("This is a simple event")
 		.Post()
 
+
+## More Information
 
 For more details, see http://loggr.net/docs
 
