@@ -37,18 +37,22 @@ Sample lines for you *.config file
 Here's some sample code to get you started...
 
 Post a .Net exception
-{{
+
 	Loggr.Events.CreateFromException(ex)
 		.Text("This was an error: $$")
 		.Source("myapp")
 		.AddTag("critical")
 		.Post()
-}}
 
 Post a simple event
-{{
+
 	Loggr.Events.Create()
-	.Text("This is a simple event")
-	.Post()
-}}
+		.Text("This is a simple event")
+		.Post()
+
+
+For more details, see http://loggr.net/docs
+
+
+
 
