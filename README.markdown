@@ -1,6 +1,7 @@
-agents
-========
+## Loggr Agents
 
-directory of agent source code for Loggr.net
+This repository contains source code for event posting agents for Loggr.net
 
-more to come...
+More to come...
+
+
