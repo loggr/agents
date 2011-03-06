@@ -141,7 +141,14 @@ namespace Loggr
             AppendQuerystringNameValue("link", Event.Link, ref qs);
             AppendQuerystringNameValueList("tags", Event.Tags, ref qs);
             AppendQuerystringNameValue("source", Event.Source, ref qs);
-            AppendQuerystringNameValue("data", Event.Data, ref qs);
+            if (Event.DataType == DataType.html)
+            {
+                AppendQuerystringNameValue("data", "@html" + Environment.NewLine + Event.Data, ref qs);
+            }
+            else
+            {
+                AppendQuerystringNameValue("data", Event.Data, ref qs);
+            }
             if (Event.Value.HasValue)
             {
                 AppendQuerystringNameValueObject("value", Event.Value.Value, ref qs);

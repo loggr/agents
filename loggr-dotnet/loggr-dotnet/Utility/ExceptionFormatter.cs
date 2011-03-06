@@ -62,8 +62,7 @@ namespace Loggr.Utility
         {
             string res = "";
 
-            // show in HTML format
-            res += "@html" + Environment.NewLine;
+            // send basic info
             res += string.Format("<b>Exception</b>: {0}<br />", ex.Message);
             res += string.Format("<b>Type</b>: {0}<br />", ex.GetType().ToString());
             res += string.Format("<b>Machine</b>: {0}<br />", System.Environment.MachineName);

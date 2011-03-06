@@ -27,7 +27,8 @@ namespace Loggr
                 .Text(ex.Message.ToString())
                 .Tags("error " + Utility.ExceptionFormatter.FormatType(ex))
                 .Source(ex.TargetSite == null?"":ex.TargetSite.DeclaringType.ToString())
-                .Data(Utility.ExceptionFormatter.Format(ex, traceObject));
+                .Data(Utility.ExceptionFormatter.Format(ex, traceObject))
+                .DataType(DataType.html);
         }
 
         public static FluentEvent CreateFromVariable(object traceObject)
@@ -37,7 +38,9 @@ namespace Loggr
 
         public static FluentEvent CreateFromVariable(object traceObject, int depth)
         {
-            return Create().Data(Utility.ObjectDumper.DumpObject(traceObject, depth));
+            return Create()
+                .Data(Utility.ObjectDumper.DumpObject(traceObject, depth))
+                .DataType(DataType.html);
         }
     }
 }
