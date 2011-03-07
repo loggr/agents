@@ -2,7 +2,7 @@
 
 This repository contains source code for event posting agents for Loggr.net
 
-We currently only have source posted for .Net
+We currently have source posted for .Net and PHP
 
 More to come...
 
