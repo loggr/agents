@@ -19,7 +19,7 @@ and apikey which can be found thru loggr.net
 
 ### Reading Events
 There are 3 methods for reading events: get(), query() and getData().
-You can try this out here: [http://jsfiddle.net/xkNjs/](http://jsfiddle.net/ez4aH/)
+You can try this out here: [http://jsfiddle.net/ez4aH/](http://jsfiddle.net/ez4aH/)
 
 get() returns a single event given an event id:
 
@@ -41,7 +41,7 @@ getData() returns a the data for a given event id:
 
 ### Posting Events
 With a log reference you can create and post events using a fluent event wrapper.
-You can try this out here: [http://jsfiddle.net/Ssjwq/](http://jsfiddle.net/3AqTP/)
+You can try this out here: [http://jsfiddle.net/3AqTP/](http://jsfiddle.net/3AqTP/)
 
     log.events.createEvent().text("this is text").post()
 
