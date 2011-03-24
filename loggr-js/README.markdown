@@ -77,6 +77,14 @@ the .dataType() method (plaintext is default)
 
     .dataType(Loggr.dataType.html) or .dataType(Loggr.dataType.plaintext)
 
+
+When setting geo, you can specify a latitude and longitude, or a prefixed value like:
+
+    .geo(40.1203, -76.2944)
+    .geo("40.1203, -76.2944")
+    .geo("ip:274.65.485.231")
+
+
 ## More Information
 
 For more details, see http://docs.loggr.net

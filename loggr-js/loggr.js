@@ -74,6 +74,12 @@
 *
 *     .dataType(Loggr.dataType.html) or .dataType(Loggr.dataType.plaintext)
 *
+* When setting geo, you can specify a latitude and longitude, or a prefixed value like:
+*
+*     .geo(40.1203, -76.2944)
+*     .geo("40.1203, -76.2944")
+*     .geo("ip:274.65.485.231")
+*
 */
 
 Loggr = {};
@@ -140,7 +146,7 @@ Loggr.fluentEvent = function (log) {
         var dataType = "";
         if (this.event.dataType == Loggr.dataType.html) dataType = "@html\r\n";
         if (this.event.data != null) qs += "&data=" + dataType + encodeURIComponent(this.event.data);
-        if (this.event.lat != null && this.event.lon != null) qs += "&lat=" + encodeURIComponent(this.event.lat) + "&lon=" + encodeURIComponent(this.event.lon);
+        if (this.event.geo != null) qs += "&geo=" + encodeURIComponent(this.event.geo);
         Loggr.jsonp.fetch("http://post.loggr.net/1/logs/" + this.log.logKey + "/events?" + qs + "&fmt=jsonp&apikey=" + this.log.apiKey + "&callback=?", function (data) { });
         return this;
     };
@@ -236,9 +242,12 @@ Loggr.fluentEvent = function (log) {
         return this;
     };
 
-    this.geo = function (lat, lon) {
-        this.event.lat = lat;
-        this.event.lon = lon;
+    this.geo = function (arg1, arg2) {
+        if (arguments.length > 1) {
+            this.event.geo = "" + arg1 + "," + arg2;
+        } else {
+            this.event.geo = arg1
+        }
         return this;
     };
 
@@ -264,15 +273,14 @@ Loggr.fluentEvent = function (log) {
 Loggr.dataType = { "html": 0, "plaintext": 1 };
 
 Loggr.event = function () {
-	this.text = null;
-	this.link = null;
-	this.source = null;
-	this.tags = null;
-	this.value = null;
-	this.data = null;
-	this.dataType = Loggr.dataType.plaintext;
-	this.lat = null;
-	this.lon = null;
+    this.text = null;
+    this.link = null;
+    this.source = null;
+    this.tags = null;
+    this.value = null;
+    this.data = null;
+    this.dataType = Loggr.dataType.plaintext;
+    this.geo = null;
 };
 
 Loggr.jsonp = {
