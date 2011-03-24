@@ -155,8 +155,7 @@ namespace Loggr
             }
             if (Event.Geo != null)
             {
-                AppendQuerystringNameValueObject("lat", Event.Geo.Latitude, ref qs);
-                AppendQuerystringNameValueObject("lon", Event.Geo.Longitude, ref qs);
+                AppendQuerystringNameValueObject("geo", Event.Geo, ref qs);
             }
             return qs;
         }

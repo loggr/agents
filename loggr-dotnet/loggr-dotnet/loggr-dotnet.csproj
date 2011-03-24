@@ -46,7 +46,6 @@
     <Compile Include="Event.cs" />
     <Compile Include="Utility\ExceptionFormatter.cs" />
     <Compile Include="FluentEvent.cs" />
-    <Compile Include="Geo.cs" />
     <Compile Include="Events.cs" />
     <Compile Include="LogClient.cs" />
     <Compile Include="Utility\ObjectDumper.cs" />

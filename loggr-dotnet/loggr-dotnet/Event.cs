@@ -21,7 +21,7 @@ namespace Loggr
         protected List<string> _tags = new List<string>();
         protected string _data = "";
         protected double? _value;
-        protected Geo _geo;
+        protected string _geo;
         protected DataType _dataType = DataType.plaintext;
 
         public string Text
@@ -96,7 +96,7 @@ namespace Loggr
             }
         }
 
-        public Geo Geo
+        public string Geo
         {
             get
             {

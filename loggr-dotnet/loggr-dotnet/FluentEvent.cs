@@ -158,19 +158,22 @@ namespace Loggr
 
         public FluentEvent Geo(double Lat, double Lon)
         {
-            this.Event.Geo = new Geo();
-            this.Event.Geo.Latitude = Lat;
-            this.Event.Geo.Longitude = Lon;
+            this.Event.Geo = String.Format("{0},{1}", Lat.ToString(), Lon.ToString());
             return this;
         }
 
         public FluentEvent Geo(string Lat, string Lon)
         {
-            this.Event.Geo = new Geo();
             double lat = 0, lon = 0;
             double.TryParse(Lat, out lat);
             double.TryParse(Lon, out lon);
             return this.Geo(lat, lon);
+        }
+
+        public FluentEvent GeoIP(string IPAddress)
+        {
+            this.Event.Geo = String.Format("ip:{0}", IPAddress);
+            return this;
         }
 
         public FluentEvent GeoClear()
