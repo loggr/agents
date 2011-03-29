@@ -21,8 +21,6 @@ Sample lines for you *.config file
 		<log>
 		  <add key="logKey" value="#####"/>
 		  <add key="apiKey" value="#####"/>
-		  <add key="server" value="post.loggr.net"/>
-		  <add key="version" value="1"/>
 		</log>
 	  </loggr>
 	  
