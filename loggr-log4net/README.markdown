@@ -4,7 +4,7 @@ A log4net "appender" for logging to Loggr. You should be able to drop in the bin
 
 ## Installation  
 
-* Drop the binaries in the /bin folder of your app 
+* Drop the binaries in the /bin folder of your app (if you already have the log4net.dll, you don't need to copy that)
 * Add a section to your web.config or app.config
 
 Sample lines for you *.config file
@@ -33,7 +33,7 @@ Sample lines for you *.config file
 
 ## How To Use
 
-When properly configured you shouldn't have to change your logging code. This Appender installs the loggr-dotnet agent, so you can add a reference to that and make better use of the Loggr posting API.
+When properly configured you shouldn't have to change your logging code. This Appender includes the loggr-dotnet agent, so you can add a reference to that and make better use of the Loggr posting API.
 
 
 ## More Information
