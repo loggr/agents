@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IFluentEvent.cs" />
     <Compile Include="Utility\Configuration.cs" />
     <Compile Include="Event.cs" />
     <Compile Include="Utility\ExceptionFormatter.cs" />

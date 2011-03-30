@@ -6,14 +6,23 @@ using System.Text.RegularExpressions;
 
 namespace Loggr
 {
-    public class FluentEvent
+    public class FluidEvent : FluentEventBase<FluidEvent>
     {
-        protected Event _event;
+        // inherits for creating a simple API
+    }
+
+    public class FluentEventBase<T> : IFluentEvent<T> where T : class, IFluentEvent<T>, new()
+    {
+        protected Event _event = new Event();
         protected LogClient _client;
 
-        internal FluentEvent(Event Event)
+        protected FluentEventBase()
         {
-            _event = Event;
+        }
+
+        internal static T Create()
+        {
+            return new T();
         }
 
         #region Fluent Methods
@@ -26,143 +35,143 @@ namespace Loggr
             }
         }
 
-        public FluentEvent Post()
+        public virtual T Post()
         {
             this.Post(true);
-            return this;
+            return this as T;
         }
 
-        public FluentEvent Post(bool Async)
+        public virtual T Post(bool Async)
         {
             if (_client == null)
             {
                 _client = new LogClient();
             }
             _client.Post(this.Event, Async);
-            return this;
+            return this as T;
         }
 
-        public FluentEvent Clear()
+        public virtual T Clear()
         {
             _event = new Event();
-            return this;
+            return this as T;
         }
 
-        public FluentEvent Text(string Text)
+        public virtual T Text(string Text)
         {
             this.Event.Text = AssignWithMacro(Text, this.Event.Text);
-            return this;
+            return this as T;
         }
 
-        public FluentEvent Text(string FormatString, params object[] FormatArguments)
+        public virtual T Text(string FormatString, params object[] FormatArguments)
         {
             return Text(string.Format(FormatString, FormatArguments));
         }
 
-        public FluentEvent AddText(string Text)
+        public virtual T AddText(string Text)
         {
             this.Event.Text += AssignWithMacro(Text, this.Event.Text);
-            return this;
+            return this as T;
         }
 
-        public FluentEvent AddText(string FormatString, params object[] FormatArguments)
+        public virtual T AddText(string FormatString, params object[] FormatArguments)
         {
             return AddText(string.Format(FormatString, FormatArguments));
         }
 
-        public FluentEvent Link(string Link)
+        public virtual T Link(string Link)
         {
             this.Event.Link = AssignWithMacro(Link, this.Event.Link);
-            return this;
+            return this as T;
         }
 
-        public FluentEvent Link(string FormatString, params object[] FormatArguments)
+        public virtual T Link(string FormatString, params object[] FormatArguments)
         {
             return Link(string.Format(FormatString, FormatArguments));
         }
 
-        public FluentEvent Source(string Source)
+        public virtual T Source(string Source)
         {
             this.Event.Source = AssignWithMacro(Source, this.Event.Source);
-            return this;
+            return this as T;
         }
 
-        public FluentEvent Source(string FormatString, params object[] FormatArguments)
+        public virtual T Source(string FormatString, params object[] FormatArguments)
         {
             return Source(string.Format(FormatString, FormatArguments));
         }
 
-        public FluentEvent Tags(string Tags)
+        public virtual T Tags(string Tags)
         {
             this.Event.Tags = new List<string>();
             return this.AddTags(Tags);
         }
 
-        public FluentEvent Tags(string[] Tags)
+        public virtual T Tags(string[] Tags)
         {
             this.Event.Tags = new List<string>();
             return this.AddTags(Tags);
         }
 
-        public FluentEvent AddTags(string Tags)
+        public virtual T AddTags(string Tags)
         {
             this.Event.Tags.AddRange(TokenizeAndFormatTags(Tags));
-            return this;
+            return this as T;
         }
 
-        public FluentEvent AddTags(string[] Tags)
+        public virtual T AddTags(string[] Tags)
         {
             this.Event.Tags.AddRange(TokenizeAndFormatTags(Tags));
-            return this;
+            return this as T;
         }
 
-        public FluentEvent Value(double Value)
+        public virtual T Value(double Value)
         {
             this.Event.Value = Value;
-            return this;
+            return this as T;
         }
 
-        public FluentEvent ValueClear()
+        public virtual T ValueClear()
         {
             this.Event.Value = null;
-            return this;
+            return this as T;
         }
 
-        public FluentEvent Data(string Data)
+        public virtual T Data(string Data)
         {
             this.Event.Data = AssignWithMacro(Data, this.Event.Data);
-            return this;
+            return this as T;
         }
 
-        public FluentEvent Data(string FormatString, params object[] FormatArguments)
+        public virtual T Data(string FormatString, params object[] FormatArguments)
         {
             return Data(string.Format(FormatString, FormatArguments));
         }
 
-        public FluentEvent AddData(string Data)
+        public virtual T AddData(string Data)
         {
             this.Event.Data += AssignWithMacro(Data, this.Event.Data);
-            return this;
+            return this as T;
         }
 
-        public FluentEvent AddData(string FormatString, params object[] FormatArguments)
+        public virtual T AddData(string FormatString, params object[] FormatArguments)
         {
             return AddData(string.Format(FormatString, FormatArguments));
         }
 
-        public FluentEvent DataType(DataType type)
+        public virtual T DataType(DataType type)
         {
             this.Event.DataType = type;
-            return this;
+            return this as T;
         }
 
-        public FluentEvent Geo(double Lat, double Lon)
+        public virtual T Geo(double Lat, double Lon)
         {
             this.Event.Geo = String.Format("{0},{1}", Lat.ToString(), Lon.ToString());
-            return this;
+            return this as T;
         }
 
-        public FluentEvent Geo(string Lat, string Lon)
+        public virtual T Geo(string Lat, string Lon)
         {
             double lat = 0, lon = 0;
             double.TryParse(Lat, out lat);
@@ -170,22 +179,22 @@ namespace Loggr
             return this.Geo(lat, lon);
         }
 
-        public FluentEvent GeoIP(string IPAddress)
+        public virtual T GeoIP(string IPAddress)
         {
             this.Event.Geo = String.Format("ip:{0}", IPAddress);
-            return this;
+            return this as T;
         }
 
-        public FluentEvent GeoClear()
+        public virtual T GeoClear()
         {
             this.Event.Geo = null;
-            return this;
+            return this as T;
         }
 
-        public FluentEvent UseLog(string LogKey, string ApiKey)
+        public T UseLog(string LogKey, string ApiKey)
         {
             _client = new LogClient(LogKey, ApiKey);
-            return this;
+            return this as T;
         }
 
         #endregion
