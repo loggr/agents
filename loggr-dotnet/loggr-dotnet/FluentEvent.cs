@@ -6,7 +6,7 @@ using System.Text.RegularExpressions;
 
 namespace Loggr
 {
-    public class FluidEvent : FluentEventBase<FluidEvent>
+    public class FluentEvent : FluentEventBase<FluentEvent>
     {
         // inherits for creating a simple API
     }

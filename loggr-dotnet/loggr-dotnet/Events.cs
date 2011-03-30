@@ -11,29 +11,29 @@ namespace Loggr
         {
         }
 
-        public static FluidEvent Create()
+        public static FluentEvent Create()
         {
-            return Create<FluidEvent>();
+            return Create<FluentEvent>();
         }
 
-        public static FluidEvent CreateFromException(Exception ex)
+        public static FluentEvent CreateFromException(Exception ex)
         {
-            return CreateFromException<FluidEvent>(ex, null);
+            return CreateFromException<FluentEvent>(ex, null);
         }
 
-        public static FluidEvent CreateFromException(Exception ex, object traceObject)
+        public static FluentEvent CreateFromException(Exception ex, object traceObject)
         {
-            return CreateFromException<FluidEvent>(ex, traceObject);
+            return CreateFromException<FluentEvent>(ex, traceObject);
         }
 
-        public static FluidEvent CreateFromVariable(object traceObject)
+        public static FluentEvent CreateFromVariable(object traceObject)
         {
-            return CreateFromVariable<FluidEvent>(traceObject, 1);
+            return CreateFromVariable<FluentEvent>(traceObject, 1);
         }
 
-        public static FluidEvent CreateFromVariable(object traceObject, int depth)
+        public static FluentEvent CreateFromVariable(object traceObject, int depth)
         {
-            return CreateFromVariable<FluidEvent>(traceObject, depth);
+            return CreateFromVariable<FluentEvent>(traceObject, depth);
         }
 
         #region Generic Methods

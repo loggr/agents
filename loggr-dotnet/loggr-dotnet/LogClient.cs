@@ -184,7 +184,7 @@ namespace Loggr
                 return Querystring;
             if (Querystring.Length > 0)
                 Querystring += "&";
-            Querystring += string.Format("{0}={1}", Name, HttpUtility.UrlEncode(string.Join(" ", Value)));
+            Querystring += string.Format("{0}={1}", Name, HttpUtility.UrlEncode(string.Join(" ", Value.ToArray())));
             return Querystring;
         }
 
