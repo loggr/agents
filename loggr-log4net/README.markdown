@@ -5,9 +5,9 @@ A log4net "appender" for logging to Loggr. You should be able to drop in the bin
 ## Installation  
 
 * Drop the binaries in the /bin folder of your app (if you already have the log4net.dll, you don't need to copy that)
-* Add a section to your web.config or app.config
+* Add lines to your web.config or app.config
 
-Sample lines for you *.config file
+Sample lines for your *.config file
 
 	<configuration>
 	  <configSections>
@@ -29,7 +29,7 @@ Sample lines for you *.config file
 	  
 	</configuration>
 
-Config log4net to use the Appender (add to log4net section)
+Sample config log4net to use the Appender (add to log4net section)
 
 	<log4net>
 	  <appender name="LoggrAppender" type="Loggr.Log4Net.Appender,loggr-log4net"></appender>
