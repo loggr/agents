@@ -8,6 +8,7 @@ A log4net "appender" for logging to Loggr. You should be able to drop in the bin
 * Add a section to your web.config or app.config
 
 Sample lines for you *.config file
+
 	<configuration>
 	  <configSections>
 		<sectionGroup name="loggr">
