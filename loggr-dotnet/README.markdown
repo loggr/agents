@@ -2,7 +2,7 @@
 
 Loggr agent to post events. Includes a fluent interface to posting events.
 
-**NOTICE: This binary requires the full version of the .Net Framework, client profiles will not work**
+**NOTICE: This agent requires the full version of the .Net Framework, client profiles will not work**
 
 ## Installation  
 
