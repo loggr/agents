@@ -29,9 +29,26 @@ Sample lines for you *.config file
 	  
 	</configuration>
 
-* Config log4net to use the Appender
+* Config log4net to use the Appender (add to log4net section
 
-	<appender name="LoggrAppender" type="Loggr.Log4Net.Appender,loggr-log4net"></appender>
+	<log4net>
+
+		...
+
+		<appender name="LoggrAppender" type="Loggr.Log4Net.Appender,loggr-log4net"></appender>
+
+		...
+
+		<root>
+
+			...
+
+			<appender-ref ref="LoggrAppender" />
+
+			...
+
+		</root>
+	</log4net>
 
 ## How To Use
 
