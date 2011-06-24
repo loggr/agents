@@ -5,9 +5,10 @@ Loggr agent to post events. Includes a fluent interface to posting events.
 ## Installation  
 
 * Drop the binary in the /bin folder of your app 
-* Add a section to your web.config or app.config
+* Add lines to your web.config or app.config
 
-Sample lines for you *.config file
+Sample lines for your *.config file
+
 	<configuration>
 	  <configSections>
 		<sectionGroup name="loggr">
