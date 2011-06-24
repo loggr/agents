@@ -2,6 +2,8 @@
 
 Loggr agent to post events. Includes a fluent interface to posting events.
 
+**NOTICE: This binary requires the full version of the .Net Framework, client profiles will not work**
+
 ## Installation  
 
 * Drop the binary in the /bin folder of your app 

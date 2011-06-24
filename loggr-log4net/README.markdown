@@ -2,6 +2,8 @@
 
 A log4net "appender" for logging to Loggr. You should be able to drop in the binaries and configure the appender and log4net will automatically log to your Loggr log.
 
+**NOTICE: This binary requires the full version of the .Net Framework, client profiles will not work**
+
 ## Installation  
 
 * Drop the binaries in the /bin folder of your app (if you already have the log4net.dll, you don't need to copy that)
