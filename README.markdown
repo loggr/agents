@@ -5,6 +5,7 @@ This repository contains source code for our platform-specifc Loggr agents which
 We currently have source posted for: 
 	
 * .Net
+* Ruby/Rails
 * PHP
 * JavaScript
 * log4net
