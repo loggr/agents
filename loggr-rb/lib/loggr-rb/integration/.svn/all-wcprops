@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/loggr/!svn/ver/201/trunk/src/tools/agents/loggr-rb/lib/loggr-rb/integration
+END
+dj.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/loggr/!svn/ver/201/trunk/src/tools/agents/loggr-rb/lib/loggr-rb/integration/dj.rb
+END
+rack.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/loggr/!svn/ver/201/trunk/src/tools/agents/loggr-rb/lib/loggr-rb/integration/rack.rb
+END
+sinatra.rb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/loggr/!svn/ver/201/trunk/src/tools/agents/loggr-rb/lib/loggr-rb/integration/sinatra.rb
+END
+tester.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/loggr/!svn/ver/201/trunk/src/tools/agents/loggr-rb/lib/loggr-rb/integration/tester.rb
+END
+rack_rails.rb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/loggr/!svn/ver/201/trunk/src/tools/agents/loggr-rb/lib/loggr-rb/integration/rack_rails.rb
+END
+rails.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/loggr/!svn/ver/201/trunk/src/tools/agents/loggr-rb/lib/loggr-rb/integration/rails.rb
+END

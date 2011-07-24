@@ -1,0 +1,8 @@
+.ginger
+.DS_Store
+coverage
+loggr-*.gem
+doc
+log
+pkg/*
+_site

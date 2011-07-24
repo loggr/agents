@@ -1,0 +1,70 @@
+#!/usr/bin/env ruby
+
+args = ARGV.dup
+ARGV.clear
+command = args.shift.strip rescue 'help'
+
+case command
+  when 'help'
+    puts <<USAGE
+help						# Show this usage.
+test						# Send a test exception to Loggr.
+install <log_key> <api_key>	# Create config/loggr.yml with your api_key. Overrites existing one.
+
+USAGE
+  when 'test'
+    if defined?(RAILS_ROOT)
+      puts "Loading Rails environment."
+      require(File.join('config', 'boot'))
+      require(File.join(RAILS_ROOT, 'config', 'environment')) if defined?(RAILS_ROOT)
+      require "loggr-rb/integration/tester"
+    else 
+      require 'loggr-rb'    
+      require "loggr-rb/integration/tester"      
+      Loggr::Config.load('config/loggr.yml')
+    end    
+    if Loggr::Config.api_key
+      Loggr::Integration.test
+    else
+      puts 'API key not configured'
+    end
+  when 'install'
+    log_key = args[0]
+    api_key = args[1]
+    environments = args[2]
+    
+	if (log_key.nil?)
+	  puts 'Missing required paramater <log-key>. Check your app configuration at http://loggr.net.'
+	else
+      if (api_key.nil?)
+        puts 'Missing required paramater <api-key>. Check your app configuration at http://loggr.net.'
+      else
+        if (defined?(RAILS_ROOT) && !File.file?('config/environment.rb'))
+          puts "Run this command from the root of your rails application." and exit
+        else
+          Dir.mkdir('config') unless File.exists?('config')        
+        end
+      end   
+	end     
+    config_file = File.open('config/loggr.yml', 'w')
+	config_file.puts("log-key: #{log_key}\n")
+    config_file.puts("api-key: #{api_key}\n")
+	config_file.puts("\n")
+	config_file.puts("development:\n")
+	config_file.puts("  enabled: true\n")
+
+    unless(environments.nil?)
+      environments.split(',').each do |envo|
+        config_file.puts("#{envo}:\n")
+        config_file.puts("  enabled: true\n")
+      end
+    end
+    
+    config_file.close
+    puts "Config file written as config/loggr.yml.";
+    puts "----------------------------------------------";
+    File.open('config/loggr.yml').readlines.each do |line|
+      puts line
+    end
+    puts "----------------------------------------------";
+end
