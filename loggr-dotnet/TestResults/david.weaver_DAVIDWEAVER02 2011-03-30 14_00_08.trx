@@ -1,0 +1,525 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="8244c6bd-b69f-4e17-bfc9-e1dffb1e8b7b" name="david.weaver@DAVIDWEAVER02 2011-03-30 14:00:08" runUser="davidweaver02\david.weaver" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="b6106732-363e-4586-9cac-afe21d15a702">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="david.weaver_DAVIDWEAVER02 2011-03-30 14_00_08">
+      <DeploymentItem filename="D:\Working\Loggr\src\tools\agents\loggr-dotnet\loggr-dotnet\bin\Debug\loggr-dotnet.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-03-30T14:00:08.8362609-04:00" queuing="2011-03-30T14:00:08.9352666-04:00" start="2011-03-30T14:00:08.9552677-04:00" finish="2011-03-30T14:00:09.7113110-04:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="71" executed="71" passed="71" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Source_FormattedMacro" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="95379deb-69bf-ab26-ebec-65e99560e8b4">
+      <Execution id="6f34b4ee-210e-4b26-a20d-f3327ccf5fba" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Source, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Source_FormattedMacro" />
+    </UnitTest>
+    <UnitTest name="Fluent_GeoClear" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="2e5bd5d0-026c-be06-aa66-e769bb43ae0d">
+      <Execution id="51192cd9-6931-4158-9e40-f9f348bb6e72" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Fluent, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Fluent_GeoClear" />
+    </UnitTest>
+    <UnitTest name="Data_AddMacro" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="df1e3d83-e898-31db-b5a7-69bbcb090f0d">
+      <Execution id="c37d4305-6e4e-44df-87ea-249f134f812e" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Data, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Data_AddMacro" />
+    </UnitTest>
+    <UnitTest name="Fluent_AddDataFormatted" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="a8787fea-4a0e-ea98-a047-add323339864">
+      <Execution id="8164f6e4-5f8a-4a5c-93b2-604729be1b2e" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Fluent, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Fluent_AddDataFormatted" />
+    </UnitTest>
+    <UnitTest name="Data_Add" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="11039866-03ca-8076-e8aa-a4c9008a2f22">
+      <Execution id="4db0f431-bc60-4040-8642-436049c6293e" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Data, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Data_Add" />
+    </UnitTest>
+    <UnitTest name="Tags_Add" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="5587f737-39c7-f1ea-d517-1f6f5f1d1468">
+      <Execution id="0779bc6f-2804-4747-a7de-834349dc3cf6" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Tags, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Tags_Add" />
+    </UnitTest>
+    <UnitTest name="Fluent_DataType" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="b54d169b-b1e4-be5f-d7f5-b904dcfb9166">
+      <Execution id="4b661422-ba25-485c-9040-d08b39bc4abb" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Fluent, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Fluent_DataType" />
+    </UnitTest>
+    <UnitTest name="Link_Formatted" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="f4566533-9be3-57a6-9c38-4075efe8fbe5">
+      <Execution id="53077cb5-0622-47c3-b371-880fd1ce127d" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Link, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Link_Formatted" />
+    </UnitTest>
+    <UnitTest name="Fluent_Geo" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="7a190f4f-b096-4d4b-ed0f-1c793dba119e">
+      <Execution id="8c7f2369-c95c-4e42-b63c-e16b636e749c" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Fluent, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Fluent_Geo" />
+    </UnitTest>
+    <UnitTest name="Fluent_CreatEventFromVariable" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="c5e124fc-178c-bffd-294f-f688f71656ef">
+      <Execution id="ed015fa5-54bd-4cf1-9c93-a006865762df" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Fluent, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Fluent_CreatEventFromVariable" />
+    </UnitTest>
+    <UnitTest name="Fluent_Post" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="aacadb74-bbf4-7e81-e1b5-bc86c6f02447">
+      <Execution id="12af335b-d828-4454-a06d-1e30e1c6d4ee" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Fluent, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Fluent_Post" />
+    </UnitTest>
+    <UnitTest name="Tags_Replace" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="aebff967-c3f5-3847-5d31-758fa916e4a2">
+      <Execution id="a9dbe91d-d1b6-42d4-8a29-7db4d86e8cbf" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Tags, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Tags_Replace" />
+    </UnitTest>
+    <UnitTest name="Fluent_ValueClear" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="67f5673c-d82a-b57c-71a2-a944667a19db">
+      <Execution id="2b2c4605-b823-4f50-853c-01ed73d08725" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Fluent, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Fluent_ValueClear" />
+    </UnitTest>
+    <UnitTest name="Inheritance_Override" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="5b16750a-e007-1d7b-d9c7-1178d175b1d9">
+      <Execution id="944a0c5a-2480-4213-9c09-8e710c081788" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Inheritance, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Inheritance_Override" />
+    </UnitTest>
+    <UnitTest name="Fluent_Value" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="07fef7ba-cbbc-9c2b-f663-7c5452641d25">
+      <Execution id="b74f6f96-0f4e-465a-bbb1-7eebee099f9a" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Fluent, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Fluent_Value" />
+    </UnitTest>
+    <UnitTest name="Tags_BadCharacters" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="14757cfc-c894-8618-fe96-d4f5643de14c">
+      <Execution id="d8e7181d-8ddf-47f1-9688-a93e8a6ebcb9" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Tags, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Tags_BadCharacters" />
+    </UnitTest>
+    <UnitTest name="Tags_AddArray" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="038caf2f-f3c9-6809-2bf1-e6183f0cf703">
+      <Execution id="66e4b371-55ac-4ed9-bda5-b9b5991b22be" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Tags, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Tags_AddArray" />
+    </UnitTest>
+    <UnitTest name="Text_Base" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="22c1455a-36fc-30ce-646a-0fdbd1cd7dc2">
+      <Execution id="8a5ad35f-1cef-4da3-a8c2-7473a8a03ac6" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Text, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Text_Base" />
+    </UnitTest>
+    <UnitTest name="Tags_Base" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="2257c377-2a66-73ae-443b-b0d96ad8bf99">
+      <Execution id="7a0e390e-78eb-42f7-b981-07304c94d540" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Tags, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Tags_Base" />
+    </UnitTest>
+    <UnitTest name="Fluent_Data" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="bdaf4157-45af-3a09-a9c7-5d454767d0bc">
+      <Execution id="f8a53f56-b34e-405e-8ee9-9e4efc4ca090" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Fluent, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Fluent_Data" />
+    </UnitTest>
+    <UnitTest name="Fluent_Clear" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="55b1212a-2a44-ca98-f891-de1ed6c0770c">
+      <Execution id="a634708e-f756-4fbd-bdb4-0381fef751d1" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Fluent, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Fluent_Clear" />
+    </UnitTest>
+    <UnitTest name="Source_Base" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="001101aa-5e05-99d7-fc8b-a08f26f8c205">
+      <Execution id="767739a9-e602-4436-a0c1-4490df1eb219" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Source, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Source_Base" />
+    </UnitTest>
+    <UnitTest name="Fluent_DataFormatted" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="a9bc31bc-2048-db2b-1f43-bd3ad0ca07df">
+      <Execution id="4909ed3b-fa80-436f-a907-a4debcfd31ac" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Fluent, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Fluent_DataFormatted" />
+    </UnitTest>
+    <UnitTest name="Data_FormattedMacro" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="6cce50ee-558d-2e82-2e30-bf318f350fd9">
+      <Execution id="26d09223-fbfc-499c-9e7d-66168ec7692a" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Data, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Data_FormattedMacro" />
+    </UnitTest>
+    <UnitTest name="Link_FormattedMacro" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="3172c3aa-2a8a-88ac-15b1-a44a2ce5f154">
+      <Execution id="ad9d86ef-88b1-4401-a209-62be7e3c74c2" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Link, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Link_FormattedMacro" />
+    </UnitTest>
+    <UnitTest name="Fluent_Event" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="3d06f4e9-fe95-ba54-3b0a-79b61eaa2c1a">
+      <Execution id="c9090803-b2f6-4794-aba8-abe02f203df0" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Fluent, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Fluent_Event" />
+    </UnitTest>
+    <UnitTest name="Text_AddFormattedMacro" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="111967f0-b8c5-c421-e5c1-fee94b2a8e16">
+      <Execution id="5242eb39-11c8-4ab5-adec-2146b13ba36d" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Text, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Text_AddFormattedMacro" />
+    </UnitTest>
+    <UnitTest name="Text_FormattedMacro" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="147bfa13-b6e2-3092-f1bd-61dee43c4c2a">
+      <Execution id="e14dbefe-2e0a-4052-9cd2-f67d7e18ad1d" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Text, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Text_FormattedMacro" />
+    </UnitTest>
+    <UnitTest name="Data_AddFormatted" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="bdd0054c-e7fa-5df6-10c6-bb76c25f85f7">
+      <Execution id="daa865d4-b54d-49e8-8afd-d3bee6af2a0d" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Data, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Data_AddFormatted" />
+    </UnitTest>
+    <UnitTest name="Text_Macro" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="62e7dcc3-e924-7c66-e946-dcb8abe064d8">
+      <Execution id="c975893b-91eb-4b9f-925d-345a68dbbd2b" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Text, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Text_Macro" />
+    </UnitTest>
+    <UnitTest name="Fluent_Several" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="427065ed-3ae6-b12e-c037-8c0d002dcb52">
+      <Execution id="ffaad9b3-b723-476a-bbf9-0e030c8c5643" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Fluent, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Fluent_Several" />
+    </UnitTest>
+    <UnitTest name="Fluent_AddTextFormatted" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="e7d2c528-69a6-af28-a307-d3f273431c64">
+      <Execution id="e05cff9f-c25c-4733-b05b-23ae60f23aa2" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Fluent, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Fluent_AddTextFormatted" />
+    </UnitTest>
+    <UnitTest name="Fluent_CreatEventFromException" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="32cc134d-07c5-3f39-c1f4-8b399338918a">
+      <Execution id="d2114b03-f06e-4849-9152-9dec37c7352e" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Fluent, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Fluent_CreatEventFromException" />
+    </UnitTest>
+    <UnitTest name="Text_AddFormatted" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="7b9caf22-4e7b-38a2-1e77-c754a4cf230e">
+      <Execution id="97cda7b8-dccc-48b0-b270-08b6c2213b29" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Text, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Text_AddFormatted" />
+    </UnitTest>
+    <UnitTest name="Text_Add" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="ff188cc8-3753-7d60-e859-037085d543b3">
+      <Execution id="d552af9a-cbc0-4769-9c49-4fda09d1447f" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Text, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Text_Add" />
+    </UnitTest>
+    <UnitTest name="Tags_AddMultiple" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="591666d5-e53d-f6a2-da68-e5bb33a27b66">
+      <Execution id="e4453a82-24c5-45ad-af1c-9a769fe3e976" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Tags, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Tags_AddMultiple" />
+    </UnitTest>
+    <UnitTest name="Fluent_Tags" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="0831aa33-2616-c155-907d-0fc3f49ceee3">
+      <Execution id="1d08025d-d37b-4518-9e9f-2ae0a955f05d" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Fluent, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Fluent_Tags" />
+    </UnitTest>
+    <UnitTest name="Tags_Multiple" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="b70e5aae-e090-2fd7-4ddb-802dcd1b0a38">
+      <Execution id="41e91dd3-3759-44c1-b71e-8bbcc77657ca" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Tags, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Tags_Multiple" />
+    </UnitTest>
+    <UnitTest name="Source_Formatted" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="3ef8cb38-53d2-5144-506d-519c3931435e">
+      <Execution id="4001ac71-a1d5-4055-980e-17d5771a1870" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Source, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Source_Formatted" />
+    </UnitTest>
+    <UnitTest name="Fluent_TextFormatted" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="a40be578-fc46-aa48-85c0-78b8ed14d324">
+      <Execution id="610094b1-b445-4cc6-a1f5-fe81fd63badf" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Fluent, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Fluent_TextFormatted" />
+    </UnitTest>
+    <UnitTest name="GeoIP_Base" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="dc5d72eb-961f-6495-c690-60c935838790">
+      <Execution id="195b5b67-8fc1-4a20-831b-c0adb182dae1" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Geo, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GeoIP_Base" />
+    </UnitTest>
+    <UnitTest name="Tags_Array" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="ab2aeeb2-56c8-4fe6-2f7d-acecfce94f25">
+      <Execution id="286556fb-1977-43c1-9d42-4586a462ecfc" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Tags, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Tags_Array" />
+    </UnitTest>
+    <UnitTest name="Fluent_GeoText" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="10d8bd72-467d-966e-ed3f-67cab63a63be">
+      <Execution id="01ee0cfc-d9bf-48d6-937a-2c95cca8c374" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Fluent, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Fluent_GeoText" />
+    </UnitTest>
+    <UnitTest name="Fluent_Text" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="73057328-a283-c725-c94d-60bca4747463">
+      <Execution id="5a0c476b-bc29-40d5-a9c5-d6d74bfc85b1" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Fluent, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Fluent_Text" />
+    </UnitTest>
+    <UnitTest name="Data_Formatted" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="fdd566f2-19bb-6619-b074-6891dfe4779f">
+      <Execution id="b11fd0d9-5cd2-4ea2-8881-9977a1f3b08c" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Data, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Data_Formatted" />
+    </UnitTest>
+    <UnitTest name="Data_AddFormattedMacro" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="6851de46-1ce3-585c-005f-44c838cf9a5e">
+      <Execution id="025edcf7-fb15-462f-b7d9-6769c2840178" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Data, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Data_AddFormattedMacro" />
+    </UnitTest>
+    <UnitTest name="Value_Clear" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="bb52ca31-29b0-77b1-05ce-60bff3592ce6">
+      <Execution id="1bf747db-7f88-4980-89a8-5fa4511708c9" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Value, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Value_Clear" />
+    </UnitTest>
+    <UnitTest name="Geo_Base" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="b60bffbb-85c7-4036-55ff-a0d33f0b4a70">
+      <Execution id="1523aee2-85d8-4b11-9fc6-e834144061d3" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Geo, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Geo_Base" />
+    </UnitTest>
+    <UnitTest name="Fluent_AddTags" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="729c9738-cade-8170-e550-082221efa0fa">
+      <Execution id="c623ebe8-d7cb-4852-a762-846c646f3a3c" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Fluent, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Fluent_AddTags" />
+    </UnitTest>
+    <UnitTest name="Text_AddMacro" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="b91b3910-3966-5b6b-f454-2ce448d9f2eb">
+      <Execution id="d80a74f7-a308-4469-8527-0cfe6143fbf6" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Text, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Text_AddMacro" />
+    </UnitTest>
+    <UnitTest name="Geo_Clear" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="aa92953a-02a1-a750-1421-fbd54feb3adb">
+      <Execution id="befdd81d-b6df-4fc3-a2d4-bd45f6f25d68" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Geo, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Geo_Clear" />
+    </UnitTest>
+    <UnitTest name="Fluent_Link" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="bbe4c16f-6c32-29c0-eae8-b3e1803a3fbb">
+      <Execution id="093a5400-bf8d-4fec-980a-226cf1300879" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Fluent, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Fluent_Link" />
+    </UnitTest>
+    <UnitTest name="EventWrapper_Clear" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="d286b49c-fa5d-a6f8-dba3-2db0e19135ec">
+      <Execution id="3a179c3f-a73e-4fcb-b63c-6b9394100141" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.EventWrapper, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EventWrapper_Clear" />
+    </UnitTest>
+    <UnitTest name="Fluent_AddTagsArray" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="d5e78f4c-3911-0c91-90de-87fa8fd1e5fc">
+      <Execution id="cf76c6a4-0b05-4013-adc3-439d2364ec9b" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Fluent, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Fluent_AddTagsArray" />
+    </UnitTest>
+    <UnitTest name="Data_Macro" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="c39ea3fd-a28e-e606-c5ec-b0b9db07367c">
+      <Execution id="0e646af5-2db0-4cdf-99a7-18abfb747735" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Data, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Data_Macro" />
+    </UnitTest>
+    <UnitTest name="Inheritance_Base" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="c45617f1-db0a-92f8-b074-31907302d8fc">
+      <Execution id="cd08b70d-bd90-4074-8a1b-9f39ff3c4dfc" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Inheritance, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Inheritance_Base" />
+    </UnitTest>
+    <UnitTest name="Source_Macro" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="df11f6ed-c181-46ac-ae6a-9371273dde52">
+      <Execution id="b45a35ce-ec0e-41e9-8709-7a842388048f" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Source, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Source_Macro" />
+    </UnitTest>
+    <UnitTest name="Link_Base" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="2f3e7868-3172-7755-ab65-7a91ff83b35d">
+      <Execution id="3e4dd1b9-0945-499a-81a2-fb99ccea57de" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Link, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Link_Base" />
+    </UnitTest>
+    <UnitTest name="Link_Macro" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="6ef829b0-cb56-abf6-5f9a-670ce37b6f24">
+      <Execution id="e0488a19-44ac-40e5-81ff-162c80375dd6" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Link, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Link_Macro" />
+    </UnitTest>
+    <UnitTest name="Data_Base" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="06f5d02f-5ec6-b59a-6fe2-5e5b18b76adb">
+      <Execution id="34a703dd-28dd-4f68-a880-404747178742" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Data, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Data_Base" />
+    </UnitTest>
+    <UnitTest name="Tags_AddBadCharacters" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="53437a71-4b04-a098-e5be-b17c57feacf4">
+      <Execution id="89e2a94b-5c09-4652-ac36-ad743fd9abe4" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Tags, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Tags_AddBadCharacters" />
+    </UnitTest>
+    <UnitTest name="Geo_String" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="6c0b31d1-5c1d-4dc8-502e-50bda2670f08">
+      <Execution id="10754438-f79b-47ce-bce1-525d07e8f45c" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Geo, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Geo_String" />
+    </UnitTest>
+    <UnitTest name="Fluent_TagsArray" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="92d55467-ca5a-894e-c0a1-1dcf55830369">
+      <Execution id="52aded64-e52a-4ee6-8ef4-bceba10e7c84" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Fluent, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Fluent_TagsArray" />
+    </UnitTest>
+    <UnitTest name="Fluent_UseLog" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="aec520fc-3ba2-c99d-69c7-601508c2beda">
+      <Execution id="a00b3482-e712-47b7-aa4d-1fca7fb593db" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Fluent, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Fluent_UseLog" />
+    </UnitTest>
+    <UnitTest name="Fluent_PostAsync" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="392e4995-2e60-1bfe-0cd8-f6523754681a">
+      <Execution id="9c00cadb-7cdf-4d81-a692-49da1c362a41" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Fluent, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Fluent_PostAsync" />
+    </UnitTest>
+    <UnitTest name="Fluent_Source" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="0a8e1af7-b63e-c1e5-ef71-cfa27085a9e8">
+      <Execution id="38701dcd-4057-4b5b-b5dc-960b0ac03e74" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Fluent, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Fluent_Source" />
+    </UnitTest>
+    <UnitTest name="Text_Formatted" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="fd069552-29d9-8ed8-06cf-f3c10e474646">
+      <Execution id="23f72cf2-41c7-442e-a3cd-19e0fd32727c" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Text, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Text_Formatted" />
+    </UnitTest>
+    <UnitTest name="Fluent_AddData" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="89f3a75f-4d61-e5ab-91c8-1963b0d4b646">
+      <Execution id="8eb7d96b-fb1d-4d89-8fc8-f4362bf064e4" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Fluent, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Fluent_AddData" />
+    </UnitTest>
+    <UnitTest name="Fluent_AddText" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="42c985e2-b6fb-b62c-46f9-449325a15e46">
+      <Execution id="52f0f5d7-86f4-4cd6-a035-6c6ec5ddf62b" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Fluent, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Fluent_AddText" />
+    </UnitTest>
+    <UnitTest name="Fluent_CreateEvent" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="302c1a7b-a8ed-b04a-6ea1-1d9f9da37ed0">
+      <Execution id="cc34bd48-8a61-4bf2-ade0-7073783e0bd7" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Fluent, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Fluent_CreateEvent" />
+    </UnitTest>
+    <UnitTest name="Value_Base" storage="d:\working\loggr\src\tools\agents\loggr-dotnet\tests\bin\debug\tests.dll" id="bc207a9f-c5a9-4880-721d-f646c8509ce9">
+      <Execution id="c810e9c2-6322-4597-a539-980a15fe728b" />
+      <TestMethod codeBase="D:/Working/Loggr/src/tools/agents/loggr-dotnet/tests/bin/Debug/tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="tests.Value, tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Value_Base" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="001101aa-5e05-99d7-fc8b-a08f26f8c205" executionId="767739a9-e602-4436-a0c1-4490df1eb219" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="038caf2f-f3c9-6809-2bf1-e6183f0cf703" executionId="66e4b371-55ac-4ed9-bda5-b9b5991b22be" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="06f5d02f-5ec6-b59a-6fe2-5e5b18b76adb" executionId="34a703dd-28dd-4f68-a880-404747178742" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="07fef7ba-cbbc-9c2b-f663-7c5452641d25" executionId="b74f6f96-0f4e-465a-bbb1-7eebee099f9a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0831aa33-2616-c155-907d-0fc3f49ceee3" executionId="1d08025d-d37b-4518-9e9f-2ae0a955f05d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0a8e1af7-b63e-c1e5-ef71-cfa27085a9e8" executionId="38701dcd-4057-4b5b-b5dc-960b0ac03e74" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="10d8bd72-467d-966e-ed3f-67cab63a63be" executionId="01ee0cfc-d9bf-48d6-937a-2c95cca8c374" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="11039866-03ca-8076-e8aa-a4c9008a2f22" executionId="4db0f431-bc60-4040-8642-436049c6293e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="111967f0-b8c5-c421-e5c1-fee94b2a8e16" executionId="5242eb39-11c8-4ab5-adec-2146b13ba36d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="14757cfc-c894-8618-fe96-d4f5643de14c" executionId="d8e7181d-8ddf-47f1-9688-a93e8a6ebcb9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="147bfa13-b6e2-3092-f1bd-61dee43c4c2a" executionId="e14dbefe-2e0a-4052-9cd2-f67d7e18ad1d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2257c377-2a66-73ae-443b-b0d96ad8bf99" executionId="7a0e390e-78eb-42f7-b981-07304c94d540" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="22c1455a-36fc-30ce-646a-0fdbd1cd7dc2" executionId="8a5ad35f-1cef-4da3-a8c2-7473a8a03ac6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2e5bd5d0-026c-be06-aa66-e769bb43ae0d" executionId="51192cd9-6931-4158-9e40-f9f348bb6e72" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2f3e7868-3172-7755-ab65-7a91ff83b35d" executionId="3e4dd1b9-0945-499a-81a2-fb99ccea57de" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="302c1a7b-a8ed-b04a-6ea1-1d9f9da37ed0" executionId="cc34bd48-8a61-4bf2-ade0-7073783e0bd7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3172c3aa-2a8a-88ac-15b1-a44a2ce5f154" executionId="ad9d86ef-88b1-4401-a209-62be7e3c74c2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="32cc134d-07c5-3f39-c1f4-8b399338918a" executionId="d2114b03-f06e-4849-9152-9dec37c7352e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="392e4995-2e60-1bfe-0cd8-f6523754681a" executionId="9c00cadb-7cdf-4d81-a692-49da1c362a41" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3d06f4e9-fe95-ba54-3b0a-79b61eaa2c1a" executionId="c9090803-b2f6-4794-aba8-abe02f203df0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3ef8cb38-53d2-5144-506d-519c3931435e" executionId="4001ac71-a1d5-4055-980e-17d5771a1870" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="427065ed-3ae6-b12e-c037-8c0d002dcb52" executionId="ffaad9b3-b723-476a-bbf9-0e030c8c5643" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="42c985e2-b6fb-b62c-46f9-449325a15e46" executionId="52f0f5d7-86f4-4cd6-a035-6c6ec5ddf62b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="53437a71-4b04-a098-e5be-b17c57feacf4" executionId="89e2a94b-5c09-4652-ac36-ad743fd9abe4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5587f737-39c7-f1ea-d517-1f6f5f1d1468" executionId="0779bc6f-2804-4747-a7de-834349dc3cf6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="55b1212a-2a44-ca98-f891-de1ed6c0770c" executionId="a634708e-f756-4fbd-bdb4-0381fef751d1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="591666d5-e53d-f6a2-da68-e5bb33a27b66" executionId="e4453a82-24c5-45ad-af1c-9a769fe3e976" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5b16750a-e007-1d7b-d9c7-1178d175b1d9" executionId="944a0c5a-2480-4213-9c09-8e710c081788" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="62e7dcc3-e924-7c66-e946-dcb8abe064d8" executionId="c975893b-91eb-4b9f-925d-345a68dbbd2b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="67f5673c-d82a-b57c-71a2-a944667a19db" executionId="2b2c4605-b823-4f50-853c-01ed73d08725" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6851de46-1ce3-585c-005f-44c838cf9a5e" executionId="025edcf7-fb15-462f-b7d9-6769c2840178" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6c0b31d1-5c1d-4dc8-502e-50bda2670f08" executionId="10754438-f79b-47ce-bce1-525d07e8f45c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6cce50ee-558d-2e82-2e30-bf318f350fd9" executionId="26d09223-fbfc-499c-9e7d-66168ec7692a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6ef829b0-cb56-abf6-5f9a-670ce37b6f24" executionId="e0488a19-44ac-40e5-81ff-162c80375dd6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="729c9738-cade-8170-e550-082221efa0fa" executionId="c623ebe8-d7cb-4852-a762-846c646f3a3c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="73057328-a283-c725-c94d-60bca4747463" executionId="5a0c476b-bc29-40d5-a9c5-d6d74bfc85b1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7a190f4f-b096-4d4b-ed0f-1c793dba119e" executionId="8c7f2369-c95c-4e42-b63c-e16b636e749c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7b9caf22-4e7b-38a2-1e77-c754a4cf230e" executionId="97cda7b8-dccc-48b0-b270-08b6c2213b29" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="89f3a75f-4d61-e5ab-91c8-1963b0d4b646" executionId="8eb7d96b-fb1d-4d89-8fc8-f4362bf064e4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="92d55467-ca5a-894e-c0a1-1dcf55830369" executionId="52aded64-e52a-4ee6-8ef4-bceba10e7c84" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="95379deb-69bf-ab26-ebec-65e99560e8b4" executionId="6f34b4ee-210e-4b26-a20d-f3327ccf5fba" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a40be578-fc46-aa48-85c0-78b8ed14d324" executionId="610094b1-b445-4cc6-a1f5-fe81fd63badf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a8787fea-4a0e-ea98-a047-add323339864" executionId="8164f6e4-5f8a-4a5c-93b2-604729be1b2e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a9bc31bc-2048-db2b-1f43-bd3ad0ca07df" executionId="4909ed3b-fa80-436f-a907-a4debcfd31ac" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="aa92953a-02a1-a750-1421-fbd54feb3adb" executionId="befdd81d-b6df-4fc3-a2d4-bd45f6f25d68" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="aacadb74-bbf4-7e81-e1b5-bc86c6f02447" executionId="12af335b-d828-4454-a06d-1e30e1c6d4ee" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ab2aeeb2-56c8-4fe6-2f7d-acecfce94f25" executionId="286556fb-1977-43c1-9d42-4586a462ecfc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="aebff967-c3f5-3847-5d31-758fa916e4a2" executionId="a9dbe91d-d1b6-42d4-8a29-7db4d86e8cbf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="aec520fc-3ba2-c99d-69c7-601508c2beda" executionId="a00b3482-e712-47b7-aa4d-1fca7fb593db" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b54d169b-b1e4-be5f-d7f5-b904dcfb9166" executionId="4b661422-ba25-485c-9040-d08b39bc4abb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b60bffbb-85c7-4036-55ff-a0d33f0b4a70" executionId="1523aee2-85d8-4b11-9fc6-e834144061d3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b70e5aae-e090-2fd7-4ddb-802dcd1b0a38" executionId="41e91dd3-3759-44c1-b71e-8bbcc77657ca" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b91b3910-3966-5b6b-f454-2ce448d9f2eb" executionId="d80a74f7-a308-4469-8527-0cfe6143fbf6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bb52ca31-29b0-77b1-05ce-60bff3592ce6" executionId="1bf747db-7f88-4980-89a8-5fa4511708c9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bbe4c16f-6c32-29c0-eae8-b3e1803a3fbb" executionId="093a5400-bf8d-4fec-980a-226cf1300879" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bc207a9f-c5a9-4880-721d-f646c8509ce9" executionId="c810e9c2-6322-4597-a539-980a15fe728b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bdaf4157-45af-3a09-a9c7-5d454767d0bc" executionId="f8a53f56-b34e-405e-8ee9-9e4efc4ca090" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bdd0054c-e7fa-5df6-10c6-bb76c25f85f7" executionId="daa865d4-b54d-49e8-8afd-d3bee6af2a0d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c39ea3fd-a28e-e606-c5ec-b0b9db07367c" executionId="0e646af5-2db0-4cdf-99a7-18abfb747735" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c45617f1-db0a-92f8-b074-31907302d8fc" executionId="cd08b70d-bd90-4074-8a1b-9f39ff3c4dfc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c5e124fc-178c-bffd-294f-f688f71656ef" executionId="ed015fa5-54bd-4cf1-9c93-a006865762df" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d286b49c-fa5d-a6f8-dba3-2db0e19135ec" executionId="3a179c3f-a73e-4fcb-b63c-6b9394100141" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d5e78f4c-3911-0c91-90de-87fa8fd1e5fc" executionId="cf76c6a4-0b05-4013-adc3-439d2364ec9b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dc5d72eb-961f-6495-c690-60c935838790" executionId="195b5b67-8fc1-4a20-831b-c0adb182dae1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="df11f6ed-c181-46ac-ae6a-9371273dde52" executionId="b45a35ce-ec0e-41e9-8709-7a842388048f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="df1e3d83-e898-31db-b5a7-69bbcb090f0d" executionId="c37d4305-6e4e-44df-87ea-249f134f812e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e7d2c528-69a6-af28-a307-d3f273431c64" executionId="e05cff9f-c25c-4733-b05b-23ae60f23aa2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f4566533-9be3-57a6-9c38-4075efe8fbe5" executionId="53077cb5-0622-47c3-b371-880fd1ce127d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fd069552-29d9-8ed8-06cf-f3c10e474646" executionId="23f72cf2-41c7-442e-a3cd-19e0fd32727c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fdd566f2-19bb-6619-b074-6891dfe4779f" executionId="b11fd0d9-5cd2-4ea2-8881-9977a1f3b08c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ff188cc8-3753-7d60-e859-037085d543b3" executionId="d552af9a-cbc0-4769-9c49-4fda09d1447f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="767739a9-e602-4436-a0c1-4490df1eb219" testId="001101aa-5e05-99d7-fc8b-a08f26f8c205" testName="Source_Base" computerName="DAVIDWEAVER02" duration="00:00:00.0166196" startTime="2011-03-30T14:00:08.9612681-04:00" endTime="2011-03-30T14:00:09.2462844-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="767739a9-e602-4436-a0c1-4490df1eb219">
+    </UnitTestResult>
+    <UnitTestResult executionId="66e4b371-55ac-4ed9-bda5-b9b5991b22be" testId="038caf2f-f3c9-6809-2bf1-e6183f0cf703" testName="Tags_AddArray" computerName="DAVIDWEAVER02" duration="00:00:00.0020625" startTime="2011-03-30T14:00:09.2492845-04:00" endTime="2011-03-30T14:00:09.2542848-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="66e4b371-55ac-4ed9-bda5-b9b5991b22be">
+    </UnitTestResult>
+    <UnitTestResult executionId="34a703dd-28dd-4f68-a880-404747178742" testId="06f5d02f-5ec6-b59a-6fe2-5e5b18b76adb" testName="Data_Base" computerName="DAVIDWEAVER02" duration="00:00:00.0007822" startTime="2011-03-30T14:00:09.2562849-04:00" endTime="2011-03-30T14:00:09.2602852-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="34a703dd-28dd-4f68-a880-404747178742">
+    </UnitTestResult>
+    <UnitTestResult executionId="b74f6f96-0f4e-465a-bbb1-7eebee099f9a" testId="07fef7ba-cbbc-9c2b-f663-7c5452641d25" testName="Fluent_Value" computerName="DAVIDWEAVER02" duration="00:00:00.0006907" startTime="2011-03-30T14:00:09.2612852-04:00" endTime="2011-03-30T14:00:09.2652854-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b74f6f96-0f4e-465a-bbb1-7eebee099f9a">
+    </UnitTestResult>
+    <UnitTestResult executionId="1d08025d-d37b-4518-9e9f-2ae0a955f05d" testId="0831aa33-2616-c155-907d-0fc3f49ceee3" testName="Fluent_Tags" computerName="DAVIDWEAVER02" duration="00:00:00.0008411" startTime="2011-03-30T14:00:09.2682856-04:00" endTime="2011-03-30T14:00:09.2732859-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1d08025d-d37b-4518-9e9f-2ae0a955f05d">
+    </UnitTestResult>
+    <UnitTestResult executionId="38701dcd-4057-4b5b-b5dc-960b0ac03e74" testId="0a8e1af7-b63e-c1e5-ef71-cfa27085a9e8" testName="Fluent_Source" computerName="DAVIDWEAVER02" duration="00:00:00.0002538" startTime="2011-03-30T14:00:09.2752860-04:00" endTime="2011-03-30T14:00:09.2792862-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="38701dcd-4057-4b5b-b5dc-960b0ac03e74">
+    </UnitTestResult>
+    <UnitTestResult executionId="01ee0cfc-d9bf-48d6-937a-2c95cca8c374" testId="10d8bd72-467d-966e-ed3f-67cab63a63be" testName="Fluent_GeoText" computerName="DAVIDWEAVER02" duration="00:00:00.0008706" startTime="2011-03-30T14:00:09.2822864-04:00" endTime="2011-03-30T14:00:09.2862866-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="01ee0cfc-d9bf-48d6-937a-2c95cca8c374">
+    </UnitTestResult>
+    <UnitTestResult executionId="4db0f431-bc60-4040-8642-436049c6293e" testId="11039866-03ca-8076-e8aa-a4c9008a2f22" testName="Data_Add" computerName="DAVIDWEAVER02" duration="00:00:00.0006973" startTime="2011-03-30T14:00:09.2892868-04:00" endTime="2011-03-30T14:00:09.2942871-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4db0f431-bc60-4040-8642-436049c6293e">
+    </UnitTestResult>
+    <UnitTestResult executionId="5242eb39-11c8-4ab5-adec-2146b13ba36d" testId="111967f0-b8c5-c421-e5c1-fee94b2a8e16" testName="Text_AddFormattedMacro" computerName="DAVIDWEAVER02" duration="00:00:00.0014201" startTime="2011-03-30T14:00:09.2962872-04:00" endTime="2011-03-30T14:00:09.3002874-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5242eb39-11c8-4ab5-adec-2146b13ba36d">
+    </UnitTestResult>
+    <UnitTestResult executionId="d8e7181d-8ddf-47f1-9688-a93e8a6ebcb9" testId="14757cfc-c894-8618-fe96-d4f5643de14c" testName="Tags_BadCharacters" computerName="DAVIDWEAVER02" duration="00:00:00.0003484" startTime="2011-03-30T14:00:09.3032876-04:00" endTime="2011-03-30T14:00:09.3062878-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d8e7181d-8ddf-47f1-9688-a93e8a6ebcb9">
+    </UnitTestResult>
+    <UnitTestResult executionId="e14dbefe-2e0a-4052-9cd2-f67d7e18ad1d" testId="147bfa13-b6e2-3092-f1bd-61dee43c4c2a" testName="Text_FormattedMacro" computerName="DAVIDWEAVER02" duration="00:00:00.0004905" startTime="2011-03-30T14:00:09.3082879-04:00" endTime="2011-03-30T14:00:09.3112881-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e14dbefe-2e0a-4052-9cd2-f67d7e18ad1d">
+    </UnitTestResult>
+    <UnitTestResult executionId="7a0e390e-78eb-42f7-b981-07304c94d540" testId="2257c377-2a66-73ae-443b-b0d96ad8bf99" testName="Tags_Base" computerName="DAVIDWEAVER02" duration="00:00:00.0003941" startTime="2011-03-30T14:00:09.3132882-04:00" endTime="2011-03-30T14:00:09.3162884-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7a0e390e-78eb-42f7-b981-07304c94d540">
+    </UnitTestResult>
+    <UnitTestResult executionId="8a5ad35f-1cef-4da3-a8c2-7473a8a03ac6" testId="22c1455a-36fc-30ce-646a-0fdbd1cd7dc2" testName="Text_Base" computerName="DAVIDWEAVER02" duration="00:00:00.0003088" startTime="2011-03-30T14:00:09.3192885-04:00" endTime="2011-03-30T14:00:09.3222887-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8a5ad35f-1cef-4da3-a8c2-7473a8a03ac6">
+    </UnitTestResult>
+    <UnitTestResult executionId="51192cd9-6931-4158-9e40-f9f348bb6e72" testId="2e5bd5d0-026c-be06-aa66-e769bb43ae0d" testName="Fluent_GeoClear" computerName="DAVIDWEAVER02" duration="00:00:00.0004254" startTime="2011-03-30T14:00:09.3252889-04:00" endTime="2011-03-30T14:00:09.3282890-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="51192cd9-6931-4158-9e40-f9f348bb6e72">
+    </UnitTestResult>
+    <UnitTestResult executionId="3e4dd1b9-0945-499a-81a2-fb99ccea57de" testId="2f3e7868-3172-7755-ab65-7a91ff83b35d" testName="Link_Base" computerName="DAVIDWEAVER02" duration="00:00:00.0007325" startTime="2011-03-30T14:00:09.3302892-04:00" endTime="2011-03-30T14:00:09.3342894-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3e4dd1b9-0945-499a-81a2-fb99ccea57de">
+    </UnitTestResult>
+    <UnitTestResult executionId="cc34bd48-8a61-4bf2-ade0-7073783e0bd7" testId="302c1a7b-a8ed-b04a-6ea1-1d9f9da37ed0" testName="Fluent_CreateEvent" computerName="DAVIDWEAVER02" duration="00:00:00.0001751" startTime="2011-03-30T14:00:09.3372896-04:00" endTime="2011-03-30T14:00:09.3402897-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cc34bd48-8a61-4bf2-ade0-7073783e0bd7">
+    </UnitTestResult>
+    <UnitTestResult executionId="ad9d86ef-88b1-4401-a209-62be7e3c74c2" testId="3172c3aa-2a8a-88ac-15b1-a44a2ce5f154" testName="Link_FormattedMacro" computerName="DAVIDWEAVER02" duration="00:00:00.0004914" startTime="2011-03-30T14:00:09.3422898-04:00" endTime="2011-03-30T14:00:09.3452900-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ad9d86ef-88b1-4401-a209-62be7e3c74c2">
+    </UnitTestResult>
+    <UnitTestResult executionId="d2114b03-f06e-4849-9152-9dec37c7352e" testId="32cc134d-07c5-3f39-c1f4-8b399338918a" testName="Fluent_CreatEventFromException" computerName="DAVIDWEAVER02" duration="00:00:00.0081787" startTime="2011-03-30T14:00:09.3472901-04:00" endTime="2011-03-30T14:00:09.3582908-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d2114b03-f06e-4849-9152-9dec37c7352e">
+    </UnitTestResult>
+    <UnitTestResult executionId="9c00cadb-7cdf-4d81-a692-49da1c362a41" testId="392e4995-2e60-1bfe-0cd8-f6523754681a" testName="Fluent_PostAsync" computerName="DAVIDWEAVER02" duration="00:00:00.0084585" startTime="2011-03-30T14:00:09.3612909-04:00" endTime="2011-03-30T14:00:09.3862924-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9c00cadb-7cdf-4d81-a692-49da1c362a41">
+    </UnitTestResult>
+    <UnitTestResult executionId="c9090803-b2f6-4794-aba8-abe02f203df0" testId="3d06f4e9-fe95-ba54-3b0a-79b61eaa2c1a" testName="Fluent_Event" computerName="DAVIDWEAVER02" duration="00:00:00.0002410" startTime="2011-03-30T14:00:09.3902926-04:00" endTime="2011-03-30T14:00:09.3942928-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c9090803-b2f6-4794-aba8-abe02f203df0">
+    </UnitTestResult>
+    <UnitTestResult executionId="4001ac71-a1d5-4055-980e-17d5771a1870" testId="3ef8cb38-53d2-5144-506d-519c3931435e" testName="Source_Formatted" computerName="DAVIDWEAVER02" duration="00:00:00.0006352" startTime="2011-03-30T14:00:09.3972930-04:00" endTime="2011-03-30T14:00:09.4012932-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4001ac71-a1d5-4055-980e-17d5771a1870">
+    </UnitTestResult>
+    <UnitTestResult executionId="ffaad9b3-b723-476a-bbf9-0e030c8c5643" testId="427065ed-3ae6-b12e-c037-8c0d002dcb52" testName="Fluent_Several" computerName="DAVIDWEAVER02" duration="00:00:00.0010118" startTime="2011-03-30T14:00:09.4042934-04:00" endTime="2011-03-30T14:00:09.4082936-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ffaad9b3-b723-476a-bbf9-0e030c8c5643">
+    </UnitTestResult>
+    <UnitTestResult executionId="52f0f5d7-86f4-4cd6-a035-6c6ec5ddf62b" testId="42c985e2-b6fb-b62c-46f9-449325a15e46" testName="Fluent_AddText" computerName="DAVIDWEAVER02" duration="00:00:00.0002076" startTime="2011-03-30T14:00:09.4112938-04:00" endTime="2011-03-30T14:00:09.4172941-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="52f0f5d7-86f4-4cd6-a035-6c6ec5ddf62b">
+    </UnitTestResult>
+    <UnitTestResult executionId="89e2a94b-5c09-4652-ac36-ad743fd9abe4" testId="53437a71-4b04-a098-e5be-b17c57feacf4" testName="Tags_AddBadCharacters" computerName="DAVIDWEAVER02" duration="00:00:00.0004131" startTime="2011-03-30T14:00:09.4192942-04:00" endTime="2011-03-30T14:00:09.4222944-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="89e2a94b-5c09-4652-ac36-ad743fd9abe4">
+    </UnitTestResult>
+    <UnitTestResult executionId="0779bc6f-2804-4747-a7de-834349dc3cf6" testId="5587f737-39c7-f1ea-d517-1f6f5f1d1468" testName="Tags_Add" computerName="DAVIDWEAVER02" duration="00:00:00.0003506" startTime="2011-03-30T14:00:09.4242945-04:00" endTime="2011-03-30T14:00:09.4282948-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0779bc6f-2804-4747-a7de-834349dc3cf6">
+    </UnitTestResult>
+    <UnitTestResult executionId="a634708e-f756-4fbd-bdb4-0381fef751d1" testId="55b1212a-2a44-ca98-f891-de1ed6c0770c" testName="Fluent_Clear" computerName="DAVIDWEAVER02" duration="00:00:00.0003374" startTime="2011-03-30T14:00:09.4302949-04:00" endTime="2011-03-30T14:00:09.4332951-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a634708e-f756-4fbd-bdb4-0381fef751d1">
+    </UnitTestResult>
+    <UnitTestResult executionId="e4453a82-24c5-45ad-af1c-9a769fe3e976" testId="591666d5-e53d-f6a2-da68-e5bb33a27b66" testName="Tags_AddMultiple" computerName="DAVIDWEAVER02" duration="00:00:00.0003744" startTime="2011-03-30T14:00:09.4362952-04:00" endTime="2011-03-30T14:00:09.4392954-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e4453a82-24c5-45ad-af1c-9a769fe3e976">
+    </UnitTestResult>
+    <UnitTestResult executionId="944a0c5a-2480-4213-9c09-8e710c081788" testId="5b16750a-e007-1d7b-d9c7-1178d175b1d9" testName="Inheritance_Override" computerName="DAVIDWEAVER02" duration="00:00:00.0006291" startTime="2011-03-30T14:00:09.4412955-04:00" endTime="2011-03-30T14:00:09.4462958-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="944a0c5a-2480-4213-9c09-8e710c081788">
+    </UnitTestResult>
+    <UnitTestResult executionId="c975893b-91eb-4b9f-925d-345a68dbbd2b" testId="62e7dcc3-e924-7c66-e946-dcb8abe064d8" testName="Text_Macro" computerName="DAVIDWEAVER02" duration="00:00:00.0003831" startTime="2011-03-30T14:00:09.4482959-04:00" endTime="2011-03-30T14:00:09.4512961-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c975893b-91eb-4b9f-925d-345a68dbbd2b">
+    </UnitTestResult>
+    <UnitTestResult executionId="2b2c4605-b823-4f50-853c-01ed73d08725" testId="67f5673c-d82a-b57c-71a2-a944667a19db" testName="Fluent_ValueClear" computerName="DAVIDWEAVER02" duration="00:00:00.0004183" startTime="2011-03-30T14:00:09.4542963-04:00" endTime="2011-03-30T14:00:09.4572964-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2b2c4605-b823-4f50-853c-01ed73d08725">
+    </UnitTestResult>
+    <UnitTestResult executionId="025edcf7-fb15-462f-b7d9-6769c2840178" testId="6851de46-1ce3-585c-005f-44c838cf9a5e" testName="Data_AddFormattedMacro" computerName="DAVIDWEAVER02" duration="00:00:00.0005943" startTime="2011-03-30T14:00:09.4602966-04:00" endTime="2011-03-30T14:00:09.4632968-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="025edcf7-fb15-462f-b7d9-6769c2840178">
+    </UnitTestResult>
+    <UnitTestResult executionId="10754438-f79b-47ce-bce1-525d07e8f45c" testId="6c0b31d1-5c1d-4dc8-502e-50bda2670f08" testName="Geo_String" computerName="DAVIDWEAVER02" duration="00:00:00.0004065" startTime="2011-03-30T14:00:09.4662969-04:00" endTime="2011-03-30T14:00:09.4692971-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="10754438-f79b-47ce-bce1-525d07e8f45c">
+    </UnitTestResult>
+    <UnitTestResult executionId="26d09223-fbfc-499c-9e7d-66168ec7692a" testId="6cce50ee-558d-2e82-2e30-bf318f350fd9" testName="Data_FormattedMacro" computerName="DAVIDWEAVER02" duration="00:00:00.0005169" startTime="2011-03-30T14:00:09.4712972-04:00" endTime="2011-03-30T14:00:09.4742974-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="26d09223-fbfc-499c-9e7d-66168ec7692a">
+    </UnitTestResult>
+    <UnitTestResult executionId="e0488a19-44ac-40e5-81ff-162c80375dd6" testId="6ef829b0-cb56-abf6-5f9a-670ce37b6f24" testName="Link_Macro" computerName="DAVIDWEAVER02" duration="00:00:00.0003009" startTime="2011-03-30T14:00:09.4772976-04:00" endTime="2011-03-30T14:00:09.4812978-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e0488a19-44ac-40e5-81ff-162c80375dd6">
+    </UnitTestResult>
+    <UnitTestResult executionId="c623ebe8-d7cb-4852-a762-846c646f3a3c" testId="729c9738-cade-8170-e550-082221efa0fa" testName="Fluent_AddTags" computerName="DAVIDWEAVER02" duration="00:00:00.0002454" startTime="2011-03-30T14:00:09.4832979-04:00" endTime="2011-03-30T14:00:09.4872981-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c623ebe8-d7cb-4852-a762-846c646f3a3c">
+    </UnitTestResult>
+    <UnitTestResult executionId="5a0c476b-bc29-40d5-a9c5-d6d74bfc85b1" testId="73057328-a283-c725-c94d-60bca4747463" testName="Fluent_Text" computerName="DAVIDWEAVER02" duration="00:00:00.0002102" startTime="2011-03-30T14:00:09.4902983-04:00" endTime="2011-03-30T14:00:09.4922984-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5a0c476b-bc29-40d5-a9c5-d6d74bfc85b1">
+    </UnitTestResult>
+    <UnitTestResult executionId="8c7f2369-c95c-4e42-b63c-e16b636e749c" testId="7a190f4f-b096-4d4b-ed0f-1c793dba119e" testName="Fluent_Geo" computerName="DAVIDWEAVER02" duration="00:00:00.0002674" startTime="2011-03-30T14:00:09.4952986-04:00" endTime="2011-03-30T14:00:09.4992988-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8c7f2369-c95c-4e42-b63c-e16b636e749c">
+    </UnitTestResult>
+    <UnitTestResult executionId="97cda7b8-dccc-48b0-b270-08b6c2213b29" testId="7b9caf22-4e7b-38a2-1e77-c754a4cf230e" testName="Text_AddFormatted" computerName="DAVIDWEAVER02" duration="00:00:00.0003937" startTime="2011-03-30T14:00:09.5022990-04:00" endTime="2011-03-30T14:00:09.5052992-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="97cda7b8-dccc-48b0-b270-08b6c2213b29">
+    </UnitTestResult>
+    <UnitTestResult executionId="8eb7d96b-fb1d-4d89-8fc8-f4362bf064e4" testId="89f3a75f-4d61-e5ab-91c8-1963b0d4b646" testName="Fluent_AddData" computerName="DAVIDWEAVER02" duration="00:00:00.0002072" startTime="2011-03-30T14:00:09.5072993-04:00" endTime="2011-03-30T14:00:09.5102995-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8eb7d96b-fb1d-4d89-8fc8-f4362bf064e4">
+    </UnitTestResult>
+    <UnitTestResult executionId="52aded64-e52a-4ee6-8ef4-bceba10e7c84" testId="92d55467-ca5a-894e-c0a1-1dcf55830369" testName="Fluent_TagsArray" computerName="DAVIDWEAVER02" duration="00:00:00.0004527" startTime="2011-03-30T14:00:09.5122996-04:00" endTime="2011-03-30T14:00:09.5152997-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="52aded64-e52a-4ee6-8ef4-bceba10e7c84">
+    </UnitTestResult>
+    <UnitTestResult executionId="6f34b4ee-210e-4b26-a20d-f3327ccf5fba" testId="95379deb-69bf-ab26-ebec-65e99560e8b4" testName="Source_FormattedMacro" computerName="DAVIDWEAVER02" duration="00:00:00.0004513" startTime="2011-03-30T14:00:09.5172999-04:00" endTime="2011-03-30T14:00:09.5213001-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6f34b4ee-210e-4b26-a20d-f3327ccf5fba">
+    </UnitTestResult>
+    <UnitTestResult executionId="610094b1-b445-4cc6-a1f5-fe81fd63badf" testId="a40be578-fc46-aa48-85c0-78b8ed14d324" testName="Fluent_TextFormatted" computerName="DAVIDWEAVER02" duration="00:00:00.0003334" startTime="2011-03-30T14:00:09.5233002-04:00" endTime="2011-03-30T14:00:09.5273004-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="610094b1-b445-4cc6-a1f5-fe81fd63badf">
+    </UnitTestResult>
+    <UnitTestResult executionId="8164f6e4-5f8a-4a5c-93b2-604729be1b2e" testId="a8787fea-4a0e-ea98-a047-add323339864" testName="Fluent_AddDataFormatted" computerName="DAVIDWEAVER02" duration="00:00:00.0002938" startTime="2011-03-30T14:00:09.5293005-04:00" endTime="2011-03-30T14:00:09.5323007-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8164f6e4-5f8a-4a5c-93b2-604729be1b2e">
+    </UnitTestResult>
+    <UnitTestResult executionId="4909ed3b-fa80-436f-a907-a4debcfd31ac" testId="a9bc31bc-2048-db2b-1f43-bd3ad0ca07df" testName="Fluent_DataFormatted" computerName="DAVIDWEAVER02" duration="00:00:00.0003097" startTime="2011-03-30T14:00:09.5353009-04:00" endTime="2011-03-30T14:00:09.5383011-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4909ed3b-fa80-436f-a907-a4debcfd31ac">
+    </UnitTestResult>
+    <UnitTestResult executionId="befdd81d-b6df-4fc3-a2d4-bd45f6f25d68" testId="aa92953a-02a1-a750-1421-fbd54feb3adb" testName="Geo_Clear" computerName="DAVIDWEAVER02" duration="00:00:00.0003114" startTime="2011-03-30T14:00:09.5403012-04:00" endTime="2011-03-30T14:00:09.5443014-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="befdd81d-b6df-4fc3-a2d4-bd45f6f25d68">
+    </UnitTestResult>
+    <UnitTestResult executionId="12af335b-d828-4454-a06d-1e30e1c6d4ee" testId="aacadb74-bbf4-7e81-e1b5-bc86c6f02447" testName="Fluent_Post" computerName="DAVIDWEAVER02" duration="00:00:00.0002261" startTime="2011-03-30T14:00:09.5453015-04:00" endTime="2011-03-30T14:00:09.5483016-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="12af335b-d828-4454-a06d-1e30e1c6d4ee">
+    </UnitTestResult>
+    <UnitTestResult executionId="286556fb-1977-43c1-9d42-4586a462ecfc" testId="ab2aeeb2-56c8-4fe6-2f7d-acecfce94f25" testName="Tags_Array" computerName="DAVIDWEAVER02" duration="00:00:00.0004091" startTime="2011-03-30T14:00:09.5523019-04:00" endTime="2011-03-30T14:00:09.5573021-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="286556fb-1977-43c1-9d42-4586a462ecfc">
+    </UnitTestResult>
+    <UnitTestResult executionId="a9dbe91d-d1b6-42d4-8a29-7db4d86e8cbf" testId="aebff967-c3f5-3847-5d31-758fa916e4a2" testName="Tags_Replace" computerName="DAVIDWEAVER02" duration="00:00:00.0004153" startTime="2011-03-30T14:00:09.5593023-04:00" endTime="2011-03-30T14:00:09.5623024-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a9dbe91d-d1b6-42d4-8a29-7db4d86e8cbf">
+    </UnitTestResult>
+    <UnitTestResult executionId="a00b3482-e712-47b7-aa4d-1fca7fb593db" testId="aec520fc-3ba2-c99d-69c7-601508c2beda" testName="Fluent_UseLog" computerName="DAVIDWEAVER02" duration="00:00:00.0002666" startTime="2011-03-30T14:00:09.5653026-04:00" endTime="2011-03-30T14:00:09.5683028-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a00b3482-e712-47b7-aa4d-1fca7fb593db">
+    </UnitTestResult>
+    <UnitTestResult executionId="4b661422-ba25-485c-9040-d08b39bc4abb" testId="b54d169b-b1e4-be5f-d7f5-b904dcfb9166" testName="Fluent_DataType" computerName="DAVIDWEAVER02" duration="00:00:00.0001843" startTime="2011-03-30T14:00:09.5703029-04:00" endTime="2011-03-30T14:00:09.5743031-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4b661422-ba25-485c-9040-d08b39bc4abb">
+    </UnitTestResult>
+    <UnitTestResult executionId="1523aee2-85d8-4b11-9fc6-e834144061d3" testId="b60bffbb-85c7-4036-55ff-a0d33f0b4a70" testName="Geo_Base" computerName="DAVIDWEAVER02" duration="00:00:00.0003150" startTime="2011-03-30T14:00:09.5753032-04:00" endTime="2011-03-30T14:00:09.5793034-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1523aee2-85d8-4b11-9fc6-e834144061d3">
+    </UnitTestResult>
+    <UnitTestResult executionId="41e91dd3-3759-44c1-b71e-8bbcc77657ca" testId="b70e5aae-e090-2fd7-4ddb-802dcd1b0a38" testName="Tags_Multiple" computerName="DAVIDWEAVER02" duration="00:00:00.0003282" startTime="2011-03-30T14:00:09.5813035-04:00" endTime="2011-03-30T14:00:09.5843037-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="41e91dd3-3759-44c1-b71e-8bbcc77657ca">
+    </UnitTestResult>
+    <UnitTestResult executionId="d80a74f7-a308-4469-8527-0cfe6143fbf6" testId="b91b3910-3966-5b6b-f454-2ce448d9f2eb" testName="Text_AddMacro" computerName="DAVIDWEAVER02" duration="00:00:00.0003554" startTime="2011-03-30T14:00:09.5863038-04:00" endTime="2011-03-30T14:00:09.5893040-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d80a74f7-a308-4469-8527-0cfe6143fbf6">
+    </UnitTestResult>
+    <UnitTestResult executionId="1bf747db-7f88-4980-89a8-5fa4511708c9" testId="bb52ca31-29b0-77b1-05ce-60bff3592ce6" testName="Value_Clear" computerName="DAVIDWEAVER02" duration="00:00:00.0004007" startTime="2011-03-30T14:00:09.5913041-04:00" endTime="2011-03-30T14:00:09.5953043-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1bf747db-7f88-4980-89a8-5fa4511708c9">
+    </UnitTestResult>
+    <UnitTestResult executionId="093a5400-bf8d-4fec-980a-226cf1300879" testId="bbe4c16f-6c32-29c0-eae8-b3e1803a3fbb" testName="Fluent_Link" computerName="DAVIDWEAVER02" duration="00:00:00.0002274" startTime="2011-03-30T14:00:09.5973044-04:00" endTime="2011-03-30T14:00:09.6013047-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="093a5400-bf8d-4fec-980a-226cf1300879">
+    </UnitTestResult>
+    <UnitTestResult executionId="c810e9c2-6322-4597-a539-980a15fe728b" testId="bc207a9f-c5a9-4880-721d-f646c8509ce9" testName="Value_Base" computerName="DAVIDWEAVER02" duration="00:00:00.0004166" startTime="2011-03-30T14:00:09.6033048-04:00" endTime="2011-03-30T14:00:09.6073050-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c810e9c2-6322-4597-a539-980a15fe728b">
+    </UnitTestResult>
+    <UnitTestResult executionId="f8a53f56-b34e-405e-8ee9-9e4efc4ca090" testId="bdaf4157-45af-3a09-a9c7-5d454767d0bc" testName="Fluent_Data" computerName="DAVIDWEAVER02" duration="00:00:00.0002538" startTime="2011-03-30T14:00:09.6093051-04:00" endTime="2011-03-30T14:00:09.6123053-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f8a53f56-b34e-405e-8ee9-9e4efc4ca090">
+    </UnitTestResult>
+    <UnitTestResult executionId="daa865d4-b54d-49e8-8afd-d3bee6af2a0d" testId="bdd0054c-e7fa-5df6-10c6-bb76c25f85f7" testName="Data_AddFormatted" computerName="DAVIDWEAVER02" duration="00:00:00.0003950" startTime="2011-03-30T14:00:09.6153055-04:00" endTime="2011-03-30T14:00:09.6183056-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="daa865d4-b54d-49e8-8afd-d3bee6af2a0d">
+    </UnitTestResult>
+    <UnitTestResult executionId="0e646af5-2db0-4cdf-99a7-18abfb747735" testId="c39ea3fd-a28e-e606-c5ec-b0b9db07367c" testName="Data_Macro" computerName="DAVIDWEAVER02" duration="00:00:00.0002780" startTime="2011-03-30T14:00:09.6203057-04:00" endTime="2011-03-30T14:00:09.6233059-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0e646af5-2db0-4cdf-99a7-18abfb747735">
+    </UnitTestResult>
+    <UnitTestResult executionId="cd08b70d-bd90-4074-8a1b-9f39ff3c4dfc" testId="c45617f1-db0a-92f8-b074-31907302d8fc" testName="Inheritance_Base" computerName="DAVIDWEAVER02" duration="00:00:00.0004984" startTime="2011-03-30T14:00:09.6263061-04:00" endTime="2011-03-30T14:00:09.6293063-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cd08b70d-bd90-4074-8a1b-9f39ff3c4dfc">
+    </UnitTestResult>
+    <UnitTestResult executionId="ed015fa5-54bd-4cf1-9c93-a006865762df" testId="c5e124fc-178c-bffd-294f-f688f71656ef" testName="Fluent_CreatEventFromVariable" computerName="DAVIDWEAVER02" duration="00:00:00.0031505" startTime="2011-03-30T14:00:09.6313064-04:00" endTime="2011-03-30T14:00:09.6373067-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ed015fa5-54bd-4cf1-9c93-a006865762df">
+    </UnitTestResult>
+    <UnitTestResult executionId="3a179c3f-a73e-4fcb-b63c-6b9394100141" testId="d286b49c-fa5d-a6f8-dba3-2db0e19135ec" testName="EventWrapper_Clear" computerName="DAVIDWEAVER02" duration="00:00:00.0005358" startTime="2011-03-30T14:00:09.6393068-04:00" endTime="2011-03-30T14:00:09.6433071-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3a179c3f-a73e-4fcb-b63c-6b9394100141">
+    </UnitTestResult>
+    <UnitTestResult executionId="cf76c6a4-0b05-4013-adc3-439d2364ec9b" testId="d5e78f4c-3911-0c91-90de-87fa8fd1e5fc" testName="Fluent_AddTagsArray" computerName="DAVIDWEAVER02" duration="00:00:00.0002710" startTime="2011-03-30T14:00:09.6463072-04:00" endTime="2011-03-30T14:00:09.6503075-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cf76c6a4-0b05-4013-adc3-439d2364ec9b">
+    </UnitTestResult>
+    <UnitTestResult executionId="195b5b67-8fc1-4a20-831b-c0adb182dae1" testId="dc5d72eb-961f-6495-c690-60c935838790" testName="GeoIP_Base" computerName="DAVIDWEAVER02" duration="00:00:00.0004777" startTime="2011-03-30T14:00:09.6523076-04:00" endTime="2011-03-30T14:00:09.6563078-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="195b5b67-8fc1-4a20-831b-c0adb182dae1">
+    </UnitTestResult>
+    <UnitTestResult executionId="b45a35ce-ec0e-41e9-8709-7a842388048f" testId="df11f6ed-c181-46ac-ae6a-9371273dde52" testName="Source_Macro" computerName="DAVIDWEAVER02" duration="00:00:00.0003598" startTime="2011-03-30T14:00:09.6593080-04:00" endTime="2011-03-30T14:00:09.6623081-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b45a35ce-ec0e-41e9-8709-7a842388048f">
+    </UnitTestResult>
+    <UnitTestResult executionId="c37d4305-6e4e-44df-87ea-249f134f812e" testId="df1e3d83-e898-31db-b5a7-69bbcb090f0d" testName="Data_AddMacro" computerName="DAVIDWEAVER02" duration="00:00:00.0003392" startTime="2011-03-30T14:00:09.6643083-04:00" endTime="2011-03-30T14:00:09.6673084-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c37d4305-6e4e-44df-87ea-249f134f812e">
+    </UnitTestResult>
+    <UnitTestResult executionId="e05cff9f-c25c-4733-b05b-23ae60f23aa2" testId="e7d2c528-69a6-af28-a307-d3f273431c64" testName="Fluent_AddTextFormatted" computerName="DAVIDWEAVER02" duration="00:00:00.0002855" startTime="2011-03-30T14:00:09.6703086-04:00" endTime="2011-03-30T14:00:09.6723087-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e05cff9f-c25c-4733-b05b-23ae60f23aa2">
+    </UnitTestResult>
+    <UnitTestResult executionId="53077cb5-0622-47c3-b371-880fd1ce127d" testId="f4566533-9be3-57a6-9c38-4075efe8fbe5" testName="Link_Formatted" computerName="DAVIDWEAVER02" duration="00:00:00.0003194" startTime="2011-03-30T14:00:09.6753089-04:00" endTime="2011-03-30T14:00:09.6783091-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="53077cb5-0622-47c3-b371-880fd1ce127d">
+    </UnitTestResult>
+    <UnitTestResult executionId="23f72cf2-41c7-442e-a3cd-19e0fd32727c" testId="fd069552-29d9-8ed8-06cf-f3c10e474646" testName="Text_Formatted" computerName="DAVIDWEAVER02" duration="00:00:00.0002952" startTime="2011-03-30T14:00:09.6803092-04:00" endTime="2011-03-30T14:00:09.6833094-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="23f72cf2-41c7-442e-a3cd-19e0fd32727c">
+    </UnitTestResult>
+    <UnitTestResult executionId="b11fd0d9-5cd2-4ea2-8881-9977a1f3b08c" testId="fdd566f2-19bb-6619-b074-6891dfe4779f" testName="Data_Formatted" computerName="DAVIDWEAVER02" duration="00:00:00.0003026" startTime="2011-03-30T14:00:09.6853095-04:00" endTime="2011-03-30T14:00:09.6883096-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b11fd0d9-5cd2-4ea2-8881-9977a1f3b08c">
+    </UnitTestResult>
+    <UnitTestResult executionId="d552af9a-cbc0-4769-9c49-4fda09d1447f" testId="ff188cc8-3753-7d60-e859-037085d543b3" testName="Text_Add" computerName="DAVIDWEAVER02" duration="00:00:00.0002921" startTime="2011-03-30T14:00:09.6903098-04:00" endTime="2011-03-30T14:00:09.6943100-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d552af9a-cbc0-4769-9c49-4fda09d1447f">
+    </UnitTestResult>
+  </Results>
+</TestRun>

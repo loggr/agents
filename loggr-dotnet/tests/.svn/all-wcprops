@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/loggr/!svn/ver/161/trunk/src/tools/agents/loggr-dotnet/tests
+END
+Value.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/loggr/!svn/ver/129/trunk/src/tools/agents/loggr-dotnet/tests/Value.cs
+END
+Fluent.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/loggr/!svn/ver/129/trunk/src/tools/agents/loggr-dotnet/tests/Fluent.cs
+END
+Link.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/loggr/!svn/ver/129/trunk/src/tools/agents/loggr-dotnet/tests/Link.cs
+END
+tests.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/loggr/!svn/ver/161/trunk/src/tools/agents/loggr-dotnet/tests/tests.csproj
+END
+Tags.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/loggr/!svn/ver/129/trunk/src/tools/agents/loggr-dotnet/tests/Tags.cs
+END
+Source.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/loggr/!svn/ver/129/trunk/src/tools/agents/loggr-dotnet/tests/Source.cs
+END
+EventWrapper.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/loggr/!svn/ver/129/trunk/src/tools/agents/loggr-dotnet/tests/EventWrapper.cs
+END
+Text.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/loggr/!svn/ver/129/trunk/src/tools/agents/loggr-dotnet/tests/Text.cs
+END
+Data.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/loggr/!svn/ver/129/trunk/src/tools/agents/loggr-dotnet/tests/Data.cs
+END
+Inheritance.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/loggr/!svn/ver/161/trunk/src/tools/agents/loggr-dotnet/tests/Inheritance.cs
+END
+Geo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/loggr/!svn/ver/152/trunk/src/tools/agents/loggr-dotnet/tests/Geo.cs
+END

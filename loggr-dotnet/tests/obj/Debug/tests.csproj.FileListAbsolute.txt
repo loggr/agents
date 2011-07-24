@@ -1,0 +1,7 @@
+D:\Working\Loggr\src\tools\agents\loggr-dotnet\tests\obj\Debug\ResolveAssemblyReference.cache
+D:\Working\Loggr\src\tools\agents\loggr-dotnet\tests\bin\Debug\tests.dll
+D:\Working\Loggr\src\tools\agents\loggr-dotnet\tests\bin\Debug\tests.pdb
+D:\Working\Loggr\src\tools\agents\loggr-dotnet\tests\bin\Debug\loggr-dotnet.dll
+D:\Working\Loggr\src\tools\agents\loggr-dotnet\tests\bin\Debug\loggr-dotnet.pdb
+D:\Working\Loggr\src\tools\agents\loggr-dotnet\tests\obj\Debug\tests.dll
+D:\Working\Loggr\src\tools\agents\loggr-dotnet\tests\obj\Debug\tests.pdb

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<configuration>
+  <configSections>
+    <sectionGroup name="loggr">
+      <section name="log" type="System.Configuration.NameValueSectionHandler"/>
+    </sectionGroup>
+  </configSections>
+  <loggr>
+    <log>
+      <!-- Get your logkey and apikey from your Loggr log settings-->
+      <add key="logKey" value="__ADD_YOUR_LOGKEY_HERE__"/>
+      <add key="apiKey" value="__ADD_YOUR_APIKEY_HERE__"/>
+    </log>
+  </loggr>
+</configuration>
