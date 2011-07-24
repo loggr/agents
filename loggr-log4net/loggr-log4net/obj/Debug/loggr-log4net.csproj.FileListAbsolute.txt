@@ -1,7 +1,0 @@
-D:\Working\Loggr\src\tools\agents\loggr-log4net\loggr-log4net\bin\Debug\loggr-log4net.dll
-D:\Working\Loggr\src\tools\agents\loggr-log4net\loggr-log4net\bin\Debug\loggr-log4net.pdb
-D:\Working\Loggr\src\tools\agents\loggr-log4net\loggr-log4net\bin\Debug\log4net.dll
-D:\Working\Loggr\src\tools\agents\loggr-log4net\loggr-log4net\bin\Debug\loggr-dotnet.dll
-D:\Working\Loggr\src\tools\agents\loggr-log4net\loggr-log4net\obj\Debug\ResolveAssemblyReference.cache
-D:\Working\Loggr\src\tools\agents\loggr-log4net\loggr-log4net\obj\Debug\loggr-log4net.dll
-D:\Working\Loggr\src\tools\agents\loggr-log4net\loggr-log4net\obj\Debug\loggr-log4net.pdb
