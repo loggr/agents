@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>loggr-log4net</id>
+    <version>1.0.2</version>
+    <authors>Dave Weaver</authors>
+    <owners>Loggr</owners>
+    <projectUrl>http://loggr.net</projectUrl>
+    <iconUrl>http://static.loggr.net/1/images/nuget/logo.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Log4net logging appender that logs to Loggr, the cloud-based event logging service.</description>
+    <tags>loggr logging events tracing exceptions log4net</tags>
+    <dependencies>
+      <dependency id="loggr-dotnet" version="[1.0.1,2.0)" />
+      <dependency id="log4net" version="[1.2.10,2.0)" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\bin\loggr-log4net.dll" target="lib" />
+    <file src="README-loggr-log4net.txt" target="content\App_Readme" />
+  </files>
+</package>
