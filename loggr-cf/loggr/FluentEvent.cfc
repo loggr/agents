@@ -25,10 +25,11 @@ Copyright 2011, Neal Erickson
     </cffunction>
     
     <cffunction name="Post" output="false" returntype="any">
+    	<cfargument name="async" required="no" type="boolean" default=true />
     	<cfscript>
 		var loc = {};
 		loc.client = CreateObject("component", "LogClient").init(variables.instance.logKey, variables.instance.apiKey);
-		loc.client.post(this.Event);
+		loc.client.post(this.Event, arguments.async);
 		
 		return this;
 		</cfscript>
