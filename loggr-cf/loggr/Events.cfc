@@ -98,11 +98,24 @@ Copyright 2011, Neal Erickson
 			
 			return this.Create()
 					   .Text(loc.message)
-					   .Tags("error")
-					   .GeoIP(cgi.remote_addr)
+					   .Tags("error")	
 					   .Data(loc.data)
 					   .DataType(constants.DataType.html);
 			
 		</cfscript>
+    </cffunction>    
+    
+    <cffunction name="CreateFromVariable" output="false" returntype="any">
+    	<cfargument name="variable" required="yes" type="any">
+		<cfset loc = {}>
+        
+        <cfsavecontent variable="loc.data">
+            <cfdump var="#arguments.variable#" format="text">
+        </cfsavecontent>
+        
+        <cfreturn this.Create()
+                      .Data(loc.data)
+                      .DataType(constants.DataType.html)>
     </cffunction>
+    
 </cfcomponent>
