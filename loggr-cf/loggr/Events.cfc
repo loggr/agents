@@ -32,13 +32,20 @@ Copyright 2011, Neal Erickson
         <cfscript>
 			var loc = {};
 			
-			if (StructKeyExists(arguments.exception, "rootcause"))
+			if (IsStruct(arguments.exception))
 			{
-				loc.exception = Duplicate(arguments.exception.rootcause);
+				if (StructKeyExists(arguments.exception, "rootcause"))
+				{
+					loc.exception = Duplicate(arguments.exception.rootcause);
+				}
+				else
+				{
+					loc.exception = Duplicate(arguments.exception);
+				}
 			}
 			else
 			{
-				loc.exception = Duplicate(arguments.exception);
+				loc.exception = {};
 			}
 			
 			loc.data = "<b>Error:</b> ";
