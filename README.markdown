@@ -8,6 +8,7 @@ We currently have source posted for:
 * Ruby/Rails
 * PHP
 * JavaScript
+* ColdFusion
 * log4net
 
 More to come...
