@@ -1,4 +1,4 @@
-/*
+/*!
 * Loggr JavaScript Library v1
 * http://api.loggr.net/1/loggr.js
 *
