@@ -17,6 +17,13 @@ and apikey which can be found thru loggr.net
 
     var log = Loggr.logs.get("YOUR-LOGKEY", "YOUR-APIKEY");
 
+### Tracking Users
+To track users of your app use the following statement:
+
+    Loggr.Log.trackUser(userName, emailAddress, [page]);
+    
+(fill in the appropriate userName and emailAddress of your user, we will use the current web page path if you don't provide one)
+
 ### Reading Events
 There are 3 methods for reading events: get(), query() and getData().
 You can try this out here: [http://jsfiddle.net/xkNjs/](http://jsfiddle.net/ez4aH/)
