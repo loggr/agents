@@ -2,11 +2,19 @@
 
 Loggr agent to post and read events. Includes a fluent interface for posting events.
 
+## BEFORE USING THIS FILE
+We prefer that you link directly to the loggr.min.js file on our website like this:
+
+    <script type="text/javascript" src="https://api.loggr.net/1/loggr.min.js?l=<YOUR-LOGKEY>&a=<YOUR-APIKEY>"></script>
+    
+Which creates a global log reference for you automatically. See http://docs.loggr.net/agents for more details.
+
+The code in this file is provided to you for customizing how your website interacts with Loggr. 
+
 ## Installation  
+Link to the loggr.min.js file from your web page 
 
-* Link to the loggr.min.js file from your web page 
-
-	<script type="text/javascript" src="http://api.loggr.net/1/loggr.min.js"></script>
+    <script type="text/javascript" src="http://api.loggr.net/1/loggr.min.js"></script>
 
 ## How To Use
 
