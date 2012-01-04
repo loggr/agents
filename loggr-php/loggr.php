@@ -140,7 +140,7 @@ class FluentEvent
 	public function AddText($text)
 	{
 		$this->Event->Text .= $this->AssignWithMacro($text, $this->Event->Text);
-		return this;
+		return $this;
 	}
 
 	public function AddTextF()
@@ -200,7 +200,7 @@ class FluentEvent
 	public function AddData($data)
 	{
 		$this->Event->Data .= $this->AssignWithMacro($data, $this->Event->Data);
-		return this;
+		return $this;
 	}
 
 	public function AddDataF()
