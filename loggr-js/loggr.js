@@ -1,4 +1,4 @@
-﻿/*!
+/*!
 * Loggr JavaScript Library v1
 * http://api.loggr.net/1/loggr.js
 *
@@ -9,11 +9,32 @@
 * ---------------------------------------------------------------------
 * this library can read and post events
 * 
-* The first thing you need to do is get a reference to a log using the logkey
+*
+* LOG REFERENCE
+* ---------------------------------------------------------------------
+* If you passed in your logkey and apikey in this script's querystring
+* you will have a global log reference, Loggr.Log:
+*
+*     Loggr.Log.events.createEvent().text("hello").post();
+*
+* (the querystring is ?l=<YOUR-LOGKEY>&a=<YOUR-APIKEY>)
+*
+* Otherwise you can create a log reference using the logkey
 * and apikey which can be found thru loggr.net
 *
-* var log = Loggr.logs.get("YOUR-LOGKEY", "YOUR-APIKEY");
-* 
+*     var log = Loggr.logs.get("<YOUR-LOGKEY>", "<YOUR-APIKEY>");
+*
+*
+* TRACKING USERS
+* ---------------------------------------------------------------------
+* To track users of your app use the following statement
+*
+*     Loggr.Log.trackUser(userName, emailAddress, [page]); 
+*
+* (fill in the appropriate userName and emailAddress of your user, we
+*  will use the current web page path if you don't provide one)
+*
+*
 * READING EVENTS
 * ---------------------------------------------------------------------
 * There are 3 methods for reading events: get(), query() and getData().
@@ -36,6 +57,7 @@
 *         alert(data);
 *     }
 * 
+*
 * POSTING EVENTS
 * ---------------------------------------------------------------------
 * With a log reference you can create and post events using a fluent event wrapper:
@@ -95,29 +117,29 @@ Loggr.eventFactory = function (log) {
     this.log = log;
     var base = this;
     this.query = function (lql, callback) {
-        Loggr.jsonp.fetch("http://api.loggr.net/1/logs/" + base.log.logKey + "/query?query=" + encodeURIComponent(lql) + "&fmt=jsonp&apikey=" + base.log.apiKey + "&callback=?", function (data) {
+        Loggr.jsonp.fetch("https://api.loggr.net/1/logs/" + base.log.logKey + "/query?query=" + encodeURIComponent(lql) + "&fmt=jsonp&apikey=" + base.log.apiKey + "&callback=?", function (data) {
             if (callback) {
                 callback(data);
             }
         });
     };
     this.get = function (id, callback) {
-        Loggr.jsonp.fetch("http://api.loggr.net/1/logs/" + base.log.logKey + "/events/" + id + "?fmt=jsonp&apikey=" + base.log.apiKey + "&callback=?", function (data) {
+        Loggr.jsonp.fetch("https://api.loggr.net/1/logs/" + base.log.logKey + "/events/" + id + "?fmt=jsonp&apikey=" + base.log.apiKey + "&callback=?", function (data) {
             if (callback) {
                 callback(data);
             }
         });
     };
     this.getData = function (id, callback) {
-        Loggr.jsonp.fetch("http://api.loggr.net/1/logs/" + base.log.logKey + "/events/" + id + "/data?fmt=jsonp&apikey=" + base.log.apiKey + "&callback=?", function (data) {
+        Loggr.jsonp.fetch("https://api.loggr.net/1/logs/" + base.log.logKey + "/events/" + id + "/data?fmt=jsonp&apikey=" + base.log.apiKey + "&callback=?", function (data) {
             if (callback) {
                 callback(data);
             }
         });
     };
-	this.createEvent = function () {
-		return new Loggr.fluentEvent(base.log);
-	};
+    this.createEvent = function () {
+        return new Loggr.fluentEvent(base.log);
+    };
 };
 
 Loggr.logs = new Loggr.logFactory();
@@ -126,6 +148,14 @@ Loggr.log = function (logKey, apiKey) {
     this.logKey = logKey;
     this.apiKey = apiKey;
     this.events = new Loggr.eventFactory(this);
+
+    this.trackUser = function (username, email, page) {
+        if (username == undefined || username == "") throw "username is not optional";
+        if (page == undefined) page = document.location.pathname;
+        var qs = "user=" + encodeURIComponent(username) + "&page=" + encodeURIComponent(page);
+        if (email != undefined) qs += "&email=" + encodeURIComponent(email);
+        Loggr.jsonp.fetch("https://post.loggr.net/1/logs/" + this.logKey + "/users?" + qs + "&fmt=jsonp&apikey=" + this.apiKey + "&callback=?", function (data) { });
+    };
 };
 
 Loggr.fluentEvent = function (log) {
@@ -149,7 +179,7 @@ Loggr.fluentEvent = function (log) {
         if (this.event.dataType == Loggr.dataType.html) dataType = "@html\r\n";
         if (this.event.data != null) qs += "&data=" + dataType + encodeURIComponent(this.event.data);
         if (this.event.geo != null) qs += "&geo=" + encodeURIComponent(this.event.geo);
-        Loggr.jsonp.fetch("http://post.loggr.net/1/logs/" + this.log.logKey + "/events?" + qs + "&fmt=jsonp&apikey=" + this.log.apiKey + "&callback=?", function (data) { });
+        Loggr.jsonp.fetch("https://post.loggr.net/1/logs/" + this.log.logKey + "/events?" + qs + "&fmt=jsonp&apikey=" + this.log.apiKey + "&callback=?", function (data) { });
         return this;
     };
 
@@ -296,7 +326,7 @@ Loggr.event = function () {
 Loggr.jsonp = {
     callbackCounter: 0,
 
-    fetch: function(url, callback) {
+    fetch: function (url, callback) {
         var fn = 'JSONPCallback_' + this.callbackCounter++;
         window[fn] = this.evalJSONP(callback);
         url = url.replace('=?', '=' + fn);
@@ -305,23 +335,22 @@ Loggr.jsonp = {
         document.getElementsByTagName('HEAD')[0].appendChild(scriptTag);
     },
 
-    evalJSONP: function(callback) {
+    evalJSONP: function (callback) {
         var base = this;
-		return function(data) {
-			if (data) {
-				for (var i=0; i<data.length; i++) {
-					if (data[i].created) {
-						data[i].created = base.parseDate(data[i].created);
-					}
-				}
-			}
-			callback(data);
+        return function (data) {
+            if (data) {
+                for (var i = 0; i < data.length; i++) {
+                    if (data[i].created) {
+                        data[i].created = base.parseDate(data[i].created);
+                    }
+                }
+            }
+            callback(data);
         }
     },
-	
-	parseDate: function (dt) {
-		var match = dt.match(/^\/Date\((\S+)\)\/$/);
-		return new Date(parseInt(match[1]));
-	}
-};
 
+    parseDate: function (dt) {
+        var match = dt.match(/^\/Date\((\S+)\)\/$/);
+        return new Date(parseInt(match[1]));
+    }
+};

@@ -167,7 +167,7 @@ class FluentEvent
 		return $this;
 	}
 
-	public function SourceF()
+	public function UserF()
 	{
 		$args = func_get_args();
 	    return $this->User(vsprintf(array_shift($args), array_values($args)));
