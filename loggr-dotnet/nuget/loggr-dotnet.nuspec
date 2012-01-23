@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>loggr-dotnet</id>
-    <version>1.0.2</version>
+    <version>1.0.5</version>
     <authors>Dave Weaver</authors>
     <owners>Loggr</owners>
     <projectUrl>http://loggr.net</projectUrl>
@@ -12,9 +12,9 @@
     <tags>loggr logging events tracing exceptions</tags>
   </metadata>
   <files>
-    <file src="..\bin\loggr-dotnet.dll" target="lib" /> 
-	  <file src="web.config.transform" target="content\web.config.transform" />
-	  <file src="app.config.transform" target="content\app.config.transform" />
+	<file src="..\bin\loggr-dotnet.dll" target="lib" /> 
+	<file src="web.config.transform" target="content\web.config.transform" />
+	<file src="app.config.transform" target="content\app.config.transform" />
     <file src="README-loggr-dotnet.txt" target="content\App_Readme" />
   </files>
 </package>

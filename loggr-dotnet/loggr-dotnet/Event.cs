@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 
 namespace Loggr
@@ -8,9 +7,13 @@ namespace Loggr
     public enum DataType
     {
         html = 0,
-        plaintext = 1
+        plaintext = 1,
+        json = 2
     }
 
+    /// <summary>
+    /// Represents an event that can be posted to Loggr using the Loggr.LogClient class
+    /// </summary>
     public class Event
     {
         #region Properties
@@ -24,11 +27,17 @@ namespace Loggr
         protected string _geo;
         protected DataType _dataType = DataType.plaintext;
         protected string _user;
+        protected DateTime? _timestamp;
 
+        /// <summary>
+        /// The text value for an event
+        /// </summary>
         public string Text
         {
             get
             {
+                System.Net.Mail.MailMessage mm = new System.Net.Mail.MailMessage();
+
                 return _text;
             }
             set
@@ -37,6 +46,9 @@ namespace Loggr
             }
         }
 
+        /// <summary>
+        /// A URL to be associated with the event
+        /// </summary>
         public string Link
         {
             get
@@ -49,6 +61,9 @@ namespace Loggr
             }
         }
 
+        /// <summary>
+        /// A source to be associated with an event
+        /// </summary>
         public string Source
         {
             get
@@ -61,6 +76,9 @@ namespace Loggr
             }
         }
 
+        /// <summary>
+        /// A list of tags to be associated with an event
+        /// </summary>
         public List<string> Tags
         {
             get
@@ -73,6 +91,9 @@ namespace Loggr
             }
         }
 
+        /// <summary>
+        /// String data to be associated with an event
+        /// </summary>
         public string Data
         {
             get
@@ -85,6 +106,9 @@ namespace Loggr
             }
         }
 
+        /// <summary>
+        /// A numeric value to be associated with an event
+        /// </summary>
         public double? Value
         {
             get
@@ -97,6 +121,9 @@ namespace Loggr
             }
         }
 
+        /// <summary>
+        /// Geographic coordinates to be associated with an event
+        /// </summary>
         public string Geo
         {
             get
@@ -109,6 +136,9 @@ namespace Loggr
             }
         }
 
+        /// <summary>
+        /// A format for the Data property
+        /// </summary>
         public DataType DataType
         {
             get
@@ -121,6 +151,9 @@ namespace Loggr
             }
         }
 
+        /// <summary>
+        /// A username to be associated with an event
+        /// </summary>
         public string User
         {
             get
@@ -130,6 +163,22 @@ namespace Loggr
             set
             {
                 _user = value;
+            }
+        }
+
+        /// <summary>
+        /// An optional timestamp to indicate when an event was created. This is typically not needed unless your application
+        /// is queuing events for later posting to Loggr
+        /// </summary>
+        public DateTime? Timestamp
+        {
+            get
+            {
+                return _timestamp;
+            }
+            set
+            {
+                _timestamp = value;
             }
         }
 

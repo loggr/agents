@@ -45,6 +45,8 @@
     </CodeAnalysisDependentAssemblyPaths>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Timestamp.cs" />
+    <Compile Include="User.cs" />
     <Compile Include="Inheritance.cs" />
     <Compile Include="EventWrapper.cs" />
     <Compile Include="Geo.cs" />

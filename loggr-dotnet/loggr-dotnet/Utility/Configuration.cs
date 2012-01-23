@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Collections.Specialized;
 
@@ -18,6 +17,7 @@ namespace Loggr.Utility
         protected static string _version = "";
         protected static string _tags = "";
         protected static string _source = "";
+        protected static string _user = "";
 
         public static string ApiKey
         {
@@ -168,6 +168,32 @@ namespace Loggr.Utility
                     }
                 }
                 return _source;
+            }
+        }
+
+        public static string User
+        {
+            get
+            {
+                if (string.IsNullOrEmpty(_user))
+                {
+                    _user = "";
+
+                    NameValueCollection config = new NameValueCollection();
+                    config = (NameValueCollection)System.Configuration.ConfigurationManager.GetSection("loggr/log");
+                    if ((config != null))
+                    {
+                        int i = 0;
+                        for (i = 0; i <= config.Keys.Count - 1; i++)
+                        {
+                            if (config.Keys[i] == "user")
+                            {
+                                _user = config[i].ToString();
+                            }
+                        }
+                    }
+                }
+                return _user;
             }
         }
 

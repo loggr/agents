@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 
 namespace Loggr
@@ -11,6 +10,7 @@ namespace Loggr
         T Link(string Link);
         T Source(string Source);
         T User(string User);
+        T Timestamp(DateTime Timestamp);
         T Tags(string Tags);
         T Value(double Value);
         T Data(string Data);
