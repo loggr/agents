@@ -282,7 +282,6 @@ namespace Loggr
             AppendQuerystringNameValueList("tags", eventObj.Tags, ref qs, 200);
             AppendQuerystringNameValue("source", eventObj.Source, ref qs, 200);
             AppendQuerystringNameValue("user", eventObj.User, ref qs, 200);
-            AppendQuerystringNameValueDate("time", eventObj.Timestamp, ref qs, 30);
             if (eventObj.DataType == DataType.html)
             {
                 AppendQuerystringNameValue("data", "@html" + Environment.NewLine + eventObj.Data, ref qs, 5120);
@@ -354,13 +353,13 @@ namespace Loggr
                 return querystring;
             if (querystring.Length > 0)
                 querystring += "&";
-            querystring += string.Format("{0}={1}", name, HttpUtility.UrlEncode(Cap(DateToUTCMilliseconds(value.Value).ToString(), length)));
+            querystring += string.Format("{0}={1}", name, HttpUtility.UrlEncode(Cap(DateToMilliseconds(value.Value).ToString(), length)));
             return querystring;
         }
 
-        protected double DateToUTCMilliseconds(DateTime input)
+        protected double DateToMilliseconds(DateTime input)
         {
-            return (input.ToUniversalTime() - new DateTime(1970,1,1,0,0,0)).TotalMilliseconds;
+            return (input - new DateTime(1970, 1, 1, 0, 0, 0)).TotalMilliseconds;
         }
 
         protected string Cap(string input, int length)

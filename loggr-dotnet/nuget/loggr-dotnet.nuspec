@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>loggr-dotnet</id>
-    <version>1.0.5</version>
+    <version>1.0.6</version>
     <authors>Dave Weaver</authors>
     <owners>Loggr</owners>
     <projectUrl>http://loggr.net</projectUrl>

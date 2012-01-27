@@ -189,14 +189,30 @@ namespace Loggr
         }
 
         /// <summary>
-        /// Assigns the Loggr.Event's Timestamp property (Optional timestamp to indicate when an event was created. This is typically not needed unless your application
-        /// is queuing events for later posting to Loggr)
+        /// Assigns the Loggr.Event's Timestamp property.
+        /// This is used to indicate when an event was created. This is typically not needed unless your application
+        /// is queuing events for later posting to Loggr.
         /// </summary>
-        /// <param name="Timestamp"></param>
+        /// <param name="Timestamp">When the event occured, in local time. It will be converted to Coordinated Universal Time (UTC) to be sent to Loggr.</param>
         /// <returns></returns>
         public virtual T Timestamp(DateTime Timestamp)
         {
-            this.Event.Timestamp = Timestamp;
+            return this.Timestamp(Timestamp, true);
+        }
+
+        /// <summary>
+        /// Assigns the Loggr.Event's Timestamp property.
+        /// This is used to indicate when an event was created. This is typically not needed unless your application
+        /// is queuing events for later posting to Loggr.
+        /// </summary>
+        /// <param name="Timestamp">When the event occured. </param>
+        /// <param name="convertToUTC">Convert the timestamp to Coordinated Universal Time (UTC) which is required by Loggr</param>
+        /// <returns></returns>
+        public virtual T Timestamp(DateTime Timestamp, bool convertToUTC)
+        {
+            if (convertToUTC)
+                this.Event.Timestamp = Timestamp.ToUniversalTime();
+            else this.Event.Timestamp = Timestamp;
             return this as T;
         }
 
