@@ -167,8 +167,8 @@ namespace Loggr
         }
 
         /// <summary>
-        /// An optional timestamp to indicate when an event was created. This is typically not needed unless your application
-        /// is queuing events for later posting to Loggr
+        /// An optional timestamp to indicate when an event was created, in Coordinated Universal Time (UTC). 
+        /// This is typically not needed unless your application is queuing events for later posting to Loggr
         /// </summary>
         public DateTime? Timestamp
         {
