@@ -99,7 +99,9 @@ Before installing this gem/plugin, be sure to sign up for a free Loggr account a
 
 	```
 	require 'loggr-rb'
-	use Rack::Loggr, LOG-KEY, API_KEY
+	use Rack::Loggr
+	Loggr::Config.log_key = 'LOG_KEY'
+	Loggr::Config.api_key = 'API_KEY'
 	```
 
 	You will find the LOG_KEY and API_KEY in the apps settings popup within Loggr.
@@ -120,7 +122,7 @@ Before installing this gem/plugin, be sure to sign up for a free Loggr account a
 
 	```
 	require 'loggr-rb'
-	use Rack::Loggr, LOG-KEY, API_KEY
+	use Rack::Loggr, LOG_KEY, API_KEY
 	```
 
 	You will find the LOG_KEY and API_KEY in the apps settings popup within Loggr.
@@ -157,7 +159,7 @@ Before installing this gem/plugin, be sure to sign up for a free Loggr account a
 	$ loggr install YOUR-LOG-KEY YOUR-API-KEY
 	```
 
-	You will find the API_KEY in the apps settings screen within Exceptional.
+	You will find the API_KEY in the apps settings screen within Loggr.
 
 3. Require the Loggr gem in your ruby code
 
