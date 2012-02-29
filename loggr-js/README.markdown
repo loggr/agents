@@ -28,7 +28,7 @@ and apikey which can be found thru loggr.net
 ### Tracking Users
 To track users of your app use the following statement:
 
-    Loggr.Log.trackUser(userName, emailAddress, [page]);
+    log.trackUser(userName, emailAddress, [page]);
     
 (fill in the appropriate userName and emailAddress of your user, we will use the current web page path if you don't provide one)
 
@@ -99,6 +99,25 @@ When setting geo, you can specify a latitude and longitude, or a prefixed value 
     .geo("40.1203, -76.2944")
     .geo("ip:274.65.485.231")
 
+### Trapping and Posting Error Events
+In some cases it is helpful to automatically trap errors and have events posted to Loggr. Javascript has a global event (window.onerror) that gets fired when a runtime error occurs. Use the code below to handle that event and post an error to Loggr.
+
+    window.onerror = function (msg, url, line) {
+        var data = "Message: " + msg + "<br>";
+        data += "URL: " + url + "<br>";
+        data += "Line: " + line + "<br>";
+        data += "Platform: " + navigator.platform + "<br>";
+        data += "User Agent: " + navigator.userAgent + "<br>";
+        log.events.createEvent()
+            .text("Runtime error: " + msg)
+            .tags("error")
+            .user(appUserName)
+            .dataType(Loggr.dataType.html)
+            .data(data)
+            .post();
+    }
+
+Keep in mind this will hide the error from the end-user, so you may want to show a pretty version of the error to your user and disable this code for debugging.
 
 ## More Information
 
