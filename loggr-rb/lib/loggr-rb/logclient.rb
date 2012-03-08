@@ -18,6 +18,7 @@ module Loggr
 	  params = params.merge({"link" => e.link}) if !e.link.nil?
 	  params = params.merge({"tags" => e.tags}) if !e.tags.nil?
 	  params = params.merge({"source" => e.source}) if !e.source.nil?
+	  params = params.merge({"user" => e.user}) if !e.user.nil?
 	  params = params.merge({"geo" => e.geo}) if !e.geo.nil?
 	  params = params.merge({"value" => e.value}) if !e.value.nil?
 	  if e.datatype == DataType::HTML
