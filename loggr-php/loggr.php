@@ -49,7 +49,7 @@ class Loggr
 		$data .= "<br><b>STACK TRACE:</b> " . $stack;
 		
 		$this->Events->Create()
-			->Text($message)
+			->Text($exception->getMessage())
 			->Tags("error exception")
 			->Data($data)
 			->Post();
@@ -84,7 +84,7 @@ class Events
 		$data .= "<br><b>BACK TRACE:</b> " . backtrace();
 	
 		return $this->Create()
-			->Text($message)
+			->Text($exception->getMessage())
 			->Tags("error " . get_class($exception))
 			->Data($data)
 			->DataType(DataType::html);
@@ -330,6 +330,14 @@ function backtrace()
 {
     $output = "<div style='text-align: left; font-family: monospace;'>\n";
     $backtrace = debug_backtrace();
+    
+    $defaults = array(
+            'class' => '',
+            'type' => '',
+            'function' => '',
+            'line' => '',
+            'file' => ''
+        );
 
     foreach ($backtrace as $bt) {
         $args = '';
@@ -365,6 +373,10 @@ function backtrace()
                 $args .= 'Unknown';
             }
         }
+                
+        
+        $bt += $defaults;
+        
         $output .= "<br />\n";
         $output .= "<b>file:</b> {$bt['line']} - {$bt['file']}<br />\n";
         $output .= "<b>call:</b> {$bt['class']}{$bt['type']}{$bt['function']}($args)<br />\n";
@@ -372,3 +384,4 @@ function backtrace()
     $output .= "</div>\n";
     return $output;
 }
+?>
