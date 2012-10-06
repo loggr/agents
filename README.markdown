@@ -1,16 +1,11 @@
 ## Loggr Agents
 
-This repository contains source code for our platform-specifc Loggr agents which are used to post events (and sometimes read events) to Loggr.
-
-We currently have source posted for: 
+NOTE: This repository is no longer being used to maintain Loggr agents. All Loggr agents have been split out into their own platform-specific repositories.
 	
-* .Net
-* Ruby/Rails
-* PHP
-* JavaScript
-* ColdFusion (submitted by user https://github.com/nealerickson)
-* log4net
-
-More to come...
-
-
+* .Net - https://github.com/loggr/loggr-dotnet
+* Ruby/Rails - https://github.com/loggr-rb
+* PHP - https://github.com/loggr-php
+* JavaScript - https://github.com/loggr-js
+* ColdFusion - https://github.com/loggr-cf
+* log4net - https://github.com/loggr-log4net
+* Java -  - https://github.com/loggr-java

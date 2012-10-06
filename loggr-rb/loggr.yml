@@ -1,5 +1,0 @@
-api-key: PASTE_YOUR_API_KEY_HERE
-log-key: PASTE_YOUR_LOG_KEY_HERE
-
-development:
-      enabled: true
