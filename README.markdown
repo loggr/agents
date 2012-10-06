@@ -1,6 +1,6 @@
-## Loggr Agents
+## Loggr
 
-NOTE: This repository is no longer being used to maintain Loggr agents. All Loggr agents have been split out into their own platform-specific repositories.
+NOTE: This repository is no longer maintained. All Loggr agents have been split out into platform-specific repositories. See below for repository links.
 	
 * .Net - https://github.com/loggr/loggr-dotnet
 * Ruby/Rails - https://github.com/loggr-rb
